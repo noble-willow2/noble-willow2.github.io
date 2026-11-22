@@ -1,0 +1,2493 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>义姐是不良妈妈_治愈系亲子影像品牌_温柔陪伴成长</title>
+<meta name="description" content="义姐是不良妈妈官方网站，以真实镜头记录不完美却温暖的亲子日常，打造治愈系家庭影像内容生态，陪伴每个普通家庭成长。">
+<meta name="keywords" content="义姐是不良妈妈,亲子影像,家庭记录,治愈视频,原创内容,创作者社区">
+<style>
+:root{
+  --pink:#e8829a;
+  --pink-soft:#fbe8ed;
+  --pink-deep:#c95877;
+  --purple:#9a7fb8;
+  --purple-soft:#efe8f5;
+  --gray-bg:#f7f5f8;
+  --gray-line:#e8e2ec;
+  --text:#3a3340;
+  --text-soft:#6f6779;
+  --white:#ffffff;
+  --shadow:0 8px 30px rgba(154,127,184,.10);
+  --radius:18px;
+  --sep: "|";
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",-apple-system,sans-serif;
+  color:var(--text);
+  background:var(--gray-bg);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none;}
+img{max-width:100%;display:block;}
+button{font-family:inherit;cursor:pointer;border:none;background:none;}
+ul{list-style:none;}
+
+/* ===== Sticky Wrapper: 公告条 + 页头 ===== */
+.sticky-wrap{
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+/* 公告条 */
+.announce{
+  background:linear-gradient(90deg,var(--pink-deep),var(--purple));
+  color:#fff;
+  font-size:13px;
+  letter-spacing:.3px;
+  padding:8px 20px;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  justify-content:center;
+  flex-wrap:wrap;
+  text-align:center;
+}
+.announce .dot{
+  width:7px;height:7px;border-radius:50%;
+  background:#ffe9a8;
+  flex:0 0 auto;
+  box-shadow:0 0 0 3px rgba(255,233,168,.25);
+  animation:pulse 1.8s infinite;
+}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.announce b{font-weight:600;}
+.announce a{
+  border-bottom:1px dashed rgba(255,255,255,.6);
+  margin-left:4px;
+}
+
+/* 页头 */
+header.site-header{
+  background:rgba(255,255,255,.92);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--gray-line);
+  padding:0 24px;
+}
+.header-inner{
+  max-width:1200px;
+  margin:0 auto;
+  height:66px;
+  display:flex;
+  align-items:center;
+  gap:28px;
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  flex:0 0 auto;
+}
+.brand-logo{
+  width:40px;height:40px;
+  border-radius:12px;
+  background:linear-gradient(135deg,var(--pink),var(--purple));
+  display:flex;align-items:center;justify-content:center;
+  color:#fff;font-weight:700;font-size:18px;
+  box-shadow:0 4px 14px rgba(232,130,154,.4);
+}
+.brand-text b{
+  display:block;
+  font-size:16px;
+  line-height:1.2;
+  letter-spacing:.5px;
+}
+.brand-text span{
+  display:block;
+  font-size:10px;
+  color:var(--text-soft);
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+}
+nav.main-nav{
+  display:flex;
+  gap:4px;
+  flex:1 1 auto;
+  flex-wrap:wrap;
+}
+nav.main-nav a{
+  font-size:14px;
+  color:var(--text-soft);
+  padding:6px 12px;
+  border-radius:8px;
+  transition:.25s;
+  white-space:nowrap;
+}
+nav.main-nav a:hover,nav.main-nav a.active{
+  color:var(--pink-deep);
+  background:var(--pink-soft);
+}
+.header-tools{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  flex:0 0 auto;
+}
+.search-box{
+  position:relative;
+  display:flex;
+  align-items:center;
+}
+.search-box input{
+  width:180px;
+  padding:8px 34px 8px 14px;
+  border-radius:20px;
+  border:1px solid var(--gray-line);
+  background:#faf8fb;
+  font-size:13px;
+  outline:none;
+  transition:.25s;
+}
+.search-box input:focus{
+  border-color:var(--pink);
+  background:#fff;
+  width:210px;
+  box-shadow:0 0 0 4px rgba(232,130,154,.12);
+}
+.search-box .s-ico{
+  position:absolute;
+  right:12px;
+  font-size:14px;
+  color:var(--text-soft);
+  pointer-events:none;
+}
+.search-tip{
+  position:absolute;
+  top:calc(100% + 8px);
+  right:0;
+  width:260px;
+  background:#fff;
+  border-radius:12px;
+  box-shadow:var(--shadow);
+  padding:10px 14px;
+  font-size:12.5px;
+  color:var(--text-soft);
+  border:1px solid var(--gray-line);
+  display:none;
+  z-index:120;
+  line-height:1.6;
+}
+.search-tip.show{display:block;}
+.btn-sub{
+  background:linear-gradient(135deg,var(--pink),var(--pink-deep));
+  color:#fff;
+  font-size:13px;
+  padding:8px 18px;
+  border-radius:20px;
+  white-space:nowrap;
+  box-shadow:0 4px 14px rgba(232,130,154,.35);
+  transition:.25s;
+}
+.btn-sub:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(232,130,154,.45);}
+.menu-toggle{
+  display:none;
+  font-size:22px;
+  color:var(--text);
+  padding:4px 8px;
+}
+
+/* 移动导航 */
+@media(max-width:900px){
+  .header-inner{height:58px;gap:14px;}
+  nav.main-nav{
+    position:absolute;
+    top:100%;left:0;right:0;
+    background:#fff;
+    flex-direction:column;
+    padding:10px 20px 16px;
+    border-bottom:1px solid var(--gray-line);
+    box-shadow:var(--shadow);
+    display:none;
+    z-index:110;
+  }
+  nav.main-nav.open{display:flex;}
+  .menu-toggle{display:block;}
+  .search-box{display:none;}
+  .header-tools .btn-sub{display:none;}
+}
+
+/* ===== 内容容器 ===== */
+.container{max-width:1200px;margin:0 auto;padding:0 24px;}
+@media(max-width:600px){.container{padding:0 16px;}}
+
+section{padding:64px 0;scroll-margin-top:118px;}
+.sec-head{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:20px;
+  margin-bottom:36px;
+  flex-wrap:wrap;
+}
+.sec-head .sec-title b{
+  display:block;
+  font-size:26px;
+  letter-spacing:.5px;
+  line-height:1.3;
+}
+.sec-head .sec-title span{
+  display:block;
+  font-size:13px;
+  color:var(--text-soft);
+  margin-top:4px;
+  letter-spacing:.5px;
+}
+.sec-head .sec-more{
+  font-size:13px;
+  color:var(--pink-deep);
+  border-bottom:1px solid transparent;
+  transition:.2s;
+}
+.sec-head .sec-more:hover{border-bottom-color:var(--pink-deep);}
+.sec-tag{
+  display:inline-block;
+  font-size:12px;
+  background:var(--pink-soft);
+  color:var(--pink-deep);
+  padding:3px 12px;
+  border-radius:20px;
+  margin-bottom:10px;
+  letter-spacing:.5px;
+}
+
+/* ===== HERO ===== */
+.hero{
+  padding:56px 0 64px;
+  background:
+    radial-gradient(circle at 85% 15%,rgba(232,130,154,.16),transparent 45%),
+    radial-gradient(circle at 10% 85%,rgba(154,127,184,.15),transparent 45%),
+    linear-gradient(180deg,#fff 0%,var(--gray-bg) 100%);
+}
+.hero-grid{
+  display:grid;
+  grid-template-columns:5fr 5fr;
+  gap:48px;
+  align-items:center;
+}
+.hero-copy h1{
+  font-size:clamp(30px,4vw,44px);
+  line-height:1.28;
+  letter-spacing:1px;
+  margin-bottom:18px;
+}
+.hero-copy h1 em{
+  font-style:normal;
+  color:var(--pink-deep);
+  position:relative;
+}
+.hero-copy h1 em::after{
+  content:"";
+  position:absolute;
+  left:0;right:0;bottom:4px;
+  height:10px;
+  background:var(--pink-soft);
+  z-index:-1;
+  border-radius:4px;
+}
+.hero-copy .lead{
+  font-size:14.5px;
+  color:var(--text-soft);
+  margin-bottom:14px;
+}
+.hero-copy .intro{
+  font-size:14.5px;
+  color:var(--text-soft);
+  margin-bottom:24px;
+  line-height:1.9;
+  text-align:justify;
+}
+.hero-actions{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-bottom:34px;
+}
+.btn-primary,.btn-ghost{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-size:14px;
+  padding:12px 24px;
+  border-radius:26px;
+  transition:.25s;
+}
+.btn-primary{
+  background:linear-gradient(135deg,var(--pink),var(--pink-deep));
+  color:#fff;
+  box-shadow:0 8px 22px rgba(232,130,154,.38);
+}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(232,130,154,.5);}
+.btn-ghost{
+  border:1.5px solid var(--gray-line);
+  color:var(--text);
+  background:#fff;
+}
+.btn-ghost:hover{border-color:var(--pink);color:var(--pink-deep);}
+.hero-stats{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+}
+.hero-stats .stat{
+  background:#fff;
+  border:1px solid var(--gray-line);
+  border-radius:14px;
+  padding:14px 16px;
+  box-shadow:var(--shadow);
+}
+.hero-stats .stat b{
+  display:block;
+  font-size:22px;
+  color:var(--pink-deep);
+  letter-spacing:.5px;
+}
+.hero-stats .stat span{
+  font-size:12px;
+  color:var(--text-soft);
+}
+.hero-visual{position:relative;}
+.hero-visual .main-img{
+  border-radius:26px;
+  overflow:hidden;
+  box-shadow:0 24px 60px rgba(154,127,184,.28);
+  aspect-ratio:4/3.4;
+  position:relative;
+}
+.hero-visual .main-img img{
+  width:100%;height:100%;object-fit:cover;
+}
+.hero-visual .float-card{
+  position:absolute;
+  bottom:-24px;
+  left:-18px;
+  background:#fff;
+  border-radius:16px;
+  padding:14px 18px;
+  box-shadow:0 14px 34px rgba(58,51,64,.14);
+  display:flex;
+  align-items:center;
+  gap:12px;
+  max-width:250px;
+}
+.float-card .fc-ico{
+  width:38px;height:38px;
+  border-radius:12px;
+  background:var(--purple-soft);
+  display:flex;align-items:center;justify-content:center;
+  font-size:18px;
+  flex:0 0 auto;
+}
+.float-card b{font-size:13.5px;display:block;line-height:1.3;}
+.float-card span{font-size:11.5px;color:var(--text-soft);}
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:40px;}
+  .hero-visual{order:-1;}
+  .hero-visual .main-img{aspect-ratio:16/10;}
+  .hero-visual .float-card{left:12px;bottom:-22px;}
+}
+@media(max-width:520px){
+  .hero-stats{grid-template-columns:1fr;}
+}
+
+/* ===== 焦点内容 ===== */
+.spotlight{background:#fff;}
+.focus-grid{
+  display:grid;
+  grid-template-columns:1.35fr 1fr 1fr;
+  grid-template-rows:auto auto;
+  gap:22px;
+}
+.vcard{
+  background:#fff;
+  border-radius:var(--radius);
+  overflow:hidden;
+  border:1px solid var(--gray-line);
+  box-shadow:var(--shadow);
+  transition:.3s;
+  display:flex;
+  flex-direction:column;
+}
+.vcard:hover{
+  transform:translateY(-5px);
+  box-shadow:0 18px 40px rgba(154,127,184,.18);
+  border-color:#f3dbe3;
+}
+.vcard .cover{
+  position:relative;
+  aspect-ratio:16/9;
+  overflow:hidden;
+  background:linear-gradient(135deg,var(--pink-soft),var(--purple-soft));
+}
+.vcard .cover img{width:100%;height:100%;object-fit:cover;transition:.5s;}
+.vcard:hover .cover img{transform:scale(1.05);}
+.vcard .cover .badge{
+  position:absolute;
+  top:12px;left:12px;
+  background:rgba(58,51,64,.72);
+  color:#fff;
+  font-size:11px;
+  padding:3px 10px;
+  border-radius:20px;
+  letter-spacing:.4px;
+  backdrop-filter:blur(4px);
+}
+.vcard .cover .dur{
+  position:absolute;
+  bottom:10px;right:10px;
+  background:rgba(0,0,0,.6);
+  color:#fff;
+  font-size:11px;
+  padding:2px 8px;
+  border-radius:6px;
+}
+.vcard .cover .play{
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  opacity:0;
+  transition:.3s;
+  background:rgba(58,51,64,.18);
+}
+.vcard:hover .cover .play{opacity:1;}
+.play-btn{
+  width:54px;height:54px;
+  border-radius:50%;
+  background:rgba(255,255,255,.9);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+.play-btn::after{
+  content:"";
+  border-style:solid;
+  border-width:9px 0 9px 15px;
+  border-color:transparent transparent transparent var(--pink-deep);
+  margin-left:4px;
+}
+.vcard .body{
+  padding:16px 18px 18px;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  flex:1;
+}
+.vcard .body h3{
+  font-size:15.5px;
+  line-height:1.45;
+  font-weight:600;
+}
+.vcard .body p{
+  font-size:12.5px;
+  color:var(--text-soft);
+  line-height:1.65;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.vcard .meta{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+  font-size:12px;
+  color:var(--text-soft);
+  margin-top:auto;
+  padding-top:4px;
+}
+.vcard .meta .author{
+  display:flex;
+  align-items:center;
+  gap:7px;
+}
+.avatar{
+  width:24px;height:24px;
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:11px;
+  color:#fff;
+  font-weight:600;
+  flex:0 0 auto;
+}
+.a1{background:linear-gradient(135deg,#e8829a,#c95877);}
+.a2{background:linear-gradient(135deg,#9a7fb8,#7a5fa0);}
+.a3{background:linear-gradient(135deg,#f0b27a,#d98b4a);}
+.a4{background:linear-gradient(135deg,#7fb8a4,#4f9a82);}
+.a5{background:linear-gradient(135deg,#8aa8d8,#5f7fb8);}
+.a6{background:linear-gradient(135deg,#d88aa8,#b85f80);}
+.vcard .meta .acts{
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+.act-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:4px;
+  font-size:12px;
+  color:var(--text-soft);
+  transition:.2s;
+  padding:2px 4px;
+  border-radius:6px;
+}
+.act-btn:hover{color:var(--pink-deep);background:var(--pink-soft);}
+.act-btn.liked{color:var(--pink-deep);}
+.act-btn.faved{color:var(--purple);}
+.act-btn svg{width:14px;height:14px;}
+
+.focus-grid .vcard.big{
+  grid-row:span 2;
+}
+.focus-grid .vcard.big .cover{aspect-ratio:16/11;}
+.focus-grid .vcard.big .body h3{font-size:20px;}
+.focus-grid .vcard.big .body p{-webkit-line-clamp:3;font-size:13px;}
+
+@media(max-width:900px){
+  .focus-grid{grid-template-columns:1fr 1fr;}
+  .focus-grid .vcard.big{grid-column:span 2;grid-row:auto;}
+  .focus-grid .vcard.big .cover{aspect-ratio:16/9;}
+}
+@media(max-width:560px){
+  .focus-grid{grid-template-columns:1fr;}
+  .focus-grid .vcard.big{grid-column:span 1;}
+}
+
+/* ===== 视频流 ===== */
+.videofeed{background:var(--gray-bg);}
+.filter-bar{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-bottom:30px;
+}
+.chip{
+  font-size:13px;
+  padding:7px 18px;
+  border-radius:20px;
+  background:#fff;
+  border:1px solid var(--gray-line);
+  color:var(--text-soft);
+  transition:.25s;
+}
+.chip:hover{border-color:var(--pink);color:var(--pink-deep);}
+.chip.on{
+  background:linear-gradient(135deg,var(--pink),var(--pink-deep));
+  color:#fff;
+  border-color:transparent;
+  box-shadow:0 4px 14px rgba(232,130,154,.35);
+}
+.feed-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+@media(max-width:900px){.feed-grid{grid-template-columns:repeat(2,1fr);gap:18px;}}
+@media(max-width:560px){.feed-grid{grid-template-columns:1fr;}}
+
+/* ===== 专题 ===== */
+.topics{background:#fff;}
+.topic-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:22px;
+}
+.topic-card{
+  border-radius:var(--radius);
+  overflow:hidden;
+  position:relative;
+  aspect-ratio:3/4.1;
+  box-shadow:var(--shadow);
+  transition:.3s;
+  cursor:pointer;
+}
+.topic-card:hover{transform:translateY(-6px);box-shadow:0 22px 44px rgba(154,127,184,.24);}
+.topic-card img{
+  width:100%;height:100%;object-fit:cover;
+  transition:.6s;
+}
+.topic-card:hover img{transform:scale(1.06);}
+.topic-card .overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg,rgba(58,51,64,0) 30%,rgba(58,51,64,.82) 100%);
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  padding:20px;
+  color:#fff;
+}
+.topic-card .overlay .t-tag{
+  font-size:11px;
+  background:rgba(255,255,255,.22);
+  align-self:flex-start;
+  padding:3px 10px;
+  border-radius:20px;
+  margin-bottom:8px;
+  backdrop-filter:blur(4px);
+}
+.topic-card .overlay h3{
+  font-size:16px;
+  line-height:1.4;
+  margin-bottom:5px;
+}
+.topic-card .overlay p{
+  font-size:12px;
+  opacity:.85;
+  line-height:1.55;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.topic-card .overlay .t-status{
+  margin-top:10px;
+  font-size:11.5px;
+  color:#ffd9e3;
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+@media(max-width:900px){.topic-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:520px){.topic-grid{grid-template-columns:1fr;}}
+
+/* ===== 创作者矩阵 ===== */
+.creators{background:var(--gray-bg);}
+.creator-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+.creator-card{
+  background:#fff;
+  border-radius:var(--radius);
+  padding:24px;
+  border:1px solid var(--gray-line);
+  box-shadow:var(--shadow);
+  transition:.3s;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  position:relative;
+}
+.creator-card:hover{transform:translateY(-4px);border-color:#f3dbe3;}
+.creator-card .cc-top{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+.creator-card .cc-avatar{
+  width:56px;height:56px;
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:22px;
+  color:#fff;
+  font-weight:700;
+  flex:0 0 auto;
+  box-shadow:0 6px 16px rgba(154,127,184,.28);
+}
+.creator-card .cc-name b{display:block;font-size:16px;}
+.creator-card .cc-name span{font-size:12px;color:var(--text-soft);}
+.creator-card .cc-desc{
+  font-size:13px;
+  color:var(--text-soft);
+  line-height:1.7;
+  flex:1;
+}
+.creator-card .cc-stats{
+  display:flex;
+  gap:18px;
+  font-size:12px;
+  color:var(--text-soft);
+  border-top:1px dashed var(--gray-line);
+  padding-top:12px;
+}
+.creator-card .cc-stats b{color:var(--text);font-size:14px;display:block;}
+.creator-card .cc-follow{
+  position:absolute;
+  top:22px;right:22px;
+  font-size:12px;
+  padding:5px 14px;
+  border-radius:20px;
+  border:1px solid var(--pink);
+  color:var(--pink-deep);
+  transition:.25s;
+}
+.creator-card .cc-follow:hover,.creator-card .cc-follow.followed{
+  background:var(--pink-deep);
+  color:#fff;
+}
+@media(max-width:900px){.creator-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:600px){.creator-grid{grid-template-columns:1fr;}}
+
+/* ===== 故事随笔 ===== */
+.stories{background:#fff;}
+.story-layout{
+  display:grid;
+  grid-template-columns:1.4fr 1fr;
+  gap:30px;
+}
+.story-main{
+  background:linear-gradient(160deg,var(--pink-soft),var(--purple-soft));
+  border-radius:24px;
+  padding:38px;
+  position:relative;
+  overflow:hidden;
+}
+.story-main::before{
+  content:"“";
+  position:absolute;
+  top:-20px;right:20px;
+  font-size:160px;
+  color:rgba(255,255,255,.5);
+  font-family:Georgia,serif;
+  line-height:1;
+}
+.story-main h3{
+  font-size:22px;
+  margin-bottom:14px;
+  position:relative;
+  z-index:1;
+}
+.story-main p{
+  font-size:14px;
+  color:var(--text-soft);
+  line-height:1.95;
+  position:relative;
+  z-index:1;
+  text-align:justify;
+}
+.story-main .story-author{
+  margin-top:22px;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  position:relative;
+  z-index:1;
+}
+.story-list{display:flex;flex-direction:column;gap:18px;}
+.story-item{
+  background:var(--gray-bg);
+  border-radius:16px;
+  padding:20px 22px;
+  border:1px solid var(--gray-line);
+  transition:.25s;
+}
+.story-item:hover{border-color:var(--pink);background:#fff;}
+.story-item .si-head{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:8px;
+}
+.story-item .si-head .tag{
+  font-size:11px;
+  background:#fff;
+  color:var(--pink-deep);
+  padding:2px 10px;
+  border-radius:20px;
+  border:1px solid var(--pink-soft);
+}
+.story-item .si-head time{font-size:11.5px;color:var(--text-soft);}
+.story-item h4{font-size:15px;margin-bottom:6px;line-height:1.5;}
+.story-item p{
+  font-size:12.5px;
+  color:var(--text-soft);
+  line-height:1.7;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+@media(max-width:800px){.story-layout{grid-template-columns:1fr;}}
+
+/* ===== 影像墙 ===== */
+.gallery{background:var(--gray-bg);}
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(6,1fr);
+  grid-auto-rows:130px;
+  gap:14px;
+}
+.g-item{
+  border-radius:14px;
+  overflow:hidden;
+  position:relative;
+  cursor:pointer;
+  box-shadow:var(--shadow);
+}
+.g-item img{width:100%;height:100%;object-fit:cover;transition:.5s;}
+.g-item:hover img{transform:scale(1.08);}
+.g-item .g-info{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg,transparent 45%,rgba(58,51,64,.78));
+  color:#fff;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  padding:14px;
+  opacity:0;
+  transition:.3s;
+}
+.g-item:hover .g-info{opacity:1;}
+.g-item .g-info b{font-size:13px;line-height:1.4;}
+.g-item .g-info span{font-size:11px;opacity:.8;}
+.g-item.w3{grid-column:span 3;grid-row:span 2;}
+.g-item.w2{grid-column:span 2;grid-row:span 2;}
+.g-item.w2h{grid-column:span 2;grid-row:span 1;}
+.g-item.w3h{grid-column:span 3;grid-row:span 1;}
+@media(max-width:900px){
+  .gallery-grid{grid-template-columns:repeat(4,1fr);grid-auto-rows:110px;}
+  .g-item.w3,.g-item.w3h{grid-column:span 2;}
+  .g-item.w2,.g-item.w2h{grid-column:span 2;}
+}
+@media(max-width:560px){
+  .gallery-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:120px;}
+  .g-item.w3,.g-item.w2,.g-item.w3h,.g-item.w2h{grid-column:span 2;grid-row:span 1;}
+}
+
+/* ===== 用户评价 ===== */
+.reviews{background:#fff;}
+.review-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+.review-card{
+  background:var(--gray-bg);
+  border-radius:16px;
+  padding:22px;
+  border:1px solid var(--gray-line);
+  transition:.25s;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+.review-card:hover{background:#fff;border-color:#f3dbe3;transform:translateY(-3px);}
+.review-card .rc-head{
+  display:flex;
+  align-items:center;
+  gap:11px;
+}
+.review-card .rc-head .avatar{width:34px;height:34px;font-size:13px;}
+.review-card .rc-head b{font-size:13.5px;display:block;}
+.review-card .rc-head span{font-size:11px;color:var(--text-soft);}
+.review-card .rc-body{
+  font-size:13px;
+  color:var(--text-soft);
+  line-height:1.8;
+  flex:1;
+}
+.review-card .rc-foot{
+  font-size:11.5px;
+  color:#b9b1c2;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.review-card .rc-stars{color:#f0b27a;letter-spacing:1px;font-size:12px;}
+@media(max-width:900px){.review-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:560px){.review-grid{grid-template-columns:1fr;}}
+
+/* ===== 更新动态 ===== */
+.updates{background:var(--gray-bg);}
+.update-layout{
+  display:grid;
+  grid-template-columns:1.2fr 1fr;
+  gap:34px;
+  align-items:start;
+}
+.update-list{
+  background:#fff;
+  border-radius:22px;
+  border:1px solid var(--gray-line);
+  box-shadow:var(--shadow);
+  padding:10px 0;
+}
+.update-item{
+  display:flex;
+  gap:18px;
+  padding:18px 26px;
+  border-bottom:1px dashed var(--gray-line);
+  transition:.2s;
+}
+.update-item:last-child{border-bottom:none;}
+.update-item:hover{background:var(--pink-soft);}
+.update-item .u-date{
+  font-size:12px;
+  color:var(--pink-deep);
+  font-weight:600;
+  flex:0 0 74px;
+  padding-top:2px;
+}
+.update-item .u-content b{font-size:14.5px;display:block;margin-bottom:4px;}
+.update-item .u-content p{font-size:12.5px;color:var(--text-soft);line-height:1.65;}
+.update-side{
+  background:linear-gradient(150deg,var(--purple),var(--pink-deep));
+  border-radius:22px;
+  padding:32px;
+  color:#fff;
+  position:relative;
+  overflow:hidden;
+}
+.update-side::after{
+  content:"";
+  position:absolute;
+  right:-40px;bottom:-40px;
+  width:160px;height:160px;
+  border-radius:50%;
+  background:rgba(255,255,255,.1);
+}
+.update-side h3{font-size:20px;margin-bottom:12px;}
+.update-side p{font-size:13.5px;opacity:.9;line-height:1.85;margin-bottom:22px;}
+.update-side .us-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  background:#fff;
+  color:var(--pink-deep);
+  font-size:13.5px;
+  padding:11px 24px;
+  border-radius:24px;
+  font-weight:600;
+  transition:.25s;
+}
+.update-side .us-btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.18);}
+@media(max-width:800px){.update-layout{grid-template-columns:1fr;}}
+
+/* ===== FAQ ===== */
+.faq{background:#fff;}
+.faq-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:14px;
+}
+.faq-item{
+  background:var(--gray-bg);
+  border-radius:14px;
+  border:1px solid var(--gray-line);
+  overflow:hidden;
+  transition:.25s;
+}
+.faq-item[open]{border-color:#f3dbe3;background:#fff;box-shadow:var(--shadow);}
+.faq-item summary{
+  list-style:none;
+  padding:17px 20px;
+  font-size:14px;
+  font-weight:600;
+  cursor:pointer;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+}
+.faq-item summary::-webkit-details-marker{display:none;}
+.faq-item summary .plus{
+  width:22px;height:22px;
+  border-radius:50%;
+  background:#fff;
+  color:var(--pink-deep);
+  display:flex;align-items:center;justify-content:center;
+  font-size:16px;
+  flex:0 0 auto;
+  transition:.3s;
+  border:1px solid var(--pink-soft);
+}
+.faq-item[open] summary .plus{transform:rotate(45deg);background:var(--pink-soft);}
+.faq-item .faq-ans{
+  padding:0 20px 18px;
+  font-size:13px;
+  color:var(--text-soft);
+  line-height:1.8;
+}
+@media(max-width:700px){.faq-grid{grid-template-columns:1fr;}}
+
+/* ===== 联系 + 品牌墙 ===== */
+.contact{background:var(--gray-bg);}
+.contact-layout{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:34px;
+}
+.contact-card{
+  background:#fff;
+  border-radius:22px;
+  padding:34px;
+  border:1px solid var(--gray-line);
+  box-shadow:var(--shadow);
+}
+.contact-card h3{font-size:20px;margin-bottom:10px;}
+.contact-card > p{font-size:13.5px;color:var(--text-soft);line-height:1.8;margin-bottom:22px;}
+.contact-info{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+.contact-info .ci-row{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-size:13.5px;
+  color:var(--text-soft);
+}
+.contact-info .ci-ico{
+  width:36px;height:36px;
+  border-radius:10px;
+  background:var(--pink-soft);
+  display:flex;align-items:center;justify-content:center;
+  font-size:16px;
+  flex:0 0 auto;
+}
+.partner-wall{
+  background:#fff;
+  border-radius:22px;
+  padding:34px;
+  border:1px solid var(--gray-line);
+  box-shadow:var(--shadow);
+}
+.partner-wall h3{font-size:20px;margin-bottom:10px;}
+.partner-wall > p{font-size:13.5px;color:var(--text-soft);margin-bottom:22px;}
+.partner-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+}
+.partner-logo{
+  border-radius:12px;
+  border:1px dashed var(--gray-line);
+  padding:16px 10px;
+  text-align:center;
+  font-size:13px;
+  color:var(--text-soft);
+  transition:.25s;
+}
+.partner-logo:hover{border-color:var(--pink);color:var(--pink-deep);background:var(--pink-soft);}
+.partner-logo b{display:block;font-size:14px;color:var(--text);margin-bottom:2px;}
+@media(max-width:800px){.contact-layout{grid-template-columns:1fr;}}
+
+/* ===== 页脚 ===== */
+footer.site-footer{
+  background:#2f2838;
+  color:#c9c2d2;
+  padding:56px 0 0;
+}
+.footer-grid{
+  display:grid;
+  grid-template-columns:1.5fr 1fr 1fr 1.2fr;
+  gap:36px;
+  padding-bottom:40px;
+  border-bottom:1px solid rgba(255,255,255,.1);
+}
+.footer-brand .fb-logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:14px;
+}
+.footer-brand .fb-logo .brand-logo{box-shadow:none;}
+.footer-brand .fb-logo b{color:#fff;font-size:16px;}
+.footer-brand p{font-size:12.5px;line-height:1.85;opacity:.72;margin-bottom:16px;}
+.footer-brand .fb-slogan{
+  display:inline-block;
+  font-size:11.5px;
+  border:1px solid rgba(255,255,255,.2);
+  padding:4px 12px;
+  border-radius:20px;
+  opacity:.8;
+}
+.footer-col h4{
+  color:#fff;
+  font-size:14px;
+  margin-bottom:16px;
+  font-weight:600;
+}
+.footer-col ul li{margin-bottom:10px;}
+.footer-col ul li a{
+  font-size:12.5px;
+  opacity:.7;
+  transition:.2s;
+}
+.footer-col ul li a:hover{opacity:1;color:var(--pink);}
+.footer-col p{font-size:12.5px;opacity:.72;line-height:1.9;}
+.footer-bottom{
+  padding:22px 0;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
+  flex-wrap:wrap;
+  font-size:12px;
+  opacity:.6;
+}
+.footer-bottom .links{display:flex;gap:16px;}
+.footer-bottom .links a:hover{color:var(--pink);}
+@media(max-width:800px){.footer-grid{grid-template-columns:1fr 1fr;gap:28px;}}
+@media(max-width:480px){.footer-grid{grid-template-columns:1fr;}}
+
+/* ===== 回到顶部 ===== */
+#backTop{
+  position:fixed;
+  right:24px;
+  bottom:30px;
+  width:46px;height:46px;
+  border-radius:50%;
+  background:linear-gradient(135deg,var(--pink),var(--pink-deep));
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:18px;
+  box-shadow:0 8px 22px rgba(232,130,154,.45);
+  opacity:0;
+  visibility:hidden;
+  transform:translateY(10px);
+  transition:.3s;
+  z-index:90;
+}
+#backTop.show{opacity:1;visibility:visible;transform:translateY(0);}
+#backTop:hover{transform:translateY(-3px);}
+
+/* ===== Toast ===== */
+#toast{
+  position:fixed;
+  left:50%;
+  bottom:80px;
+  transform:translateX(-50%) translateY(20px);
+  background:rgba(58,51,64,.94);
+  color:#fff;
+  font-size:13px;
+  padding:11px 24px;
+  border-radius:24px;
+  box-shadow:0 10px 28px rgba(0,0,0,.2);
+  opacity:0;
+  visibility:hidden;
+  transition:.3s;
+  z-index:200;
+  white-space:nowrap;
+  max-width:90vw;
+}
+#toast.show{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0);}
+
+/* ===== Modal ===== */
+.modal-mask{
+  position:fixed;
+  inset:0;
+  background:rgba(47,40,56,.55);
+  backdrop-filter:blur(4px);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+  z-index:300;
+}
+.modal-mask.show{display:flex;}
+.modal-box{
+  background:#fff;
+  border-radius:22px;
+  max-width:460px;
+  width:100%;
+  padding:32px;
+  position:relative;
+  box-shadow:0 30px 60px rgba(0,0,0,.25);
+  animation:pop .3s ease;
+}
+@keyframes pop{from{transform:scale(.92);opacity:0}to{transform:scale(1);opacity:1}}
+.modal-box h3{font-size:20px;margin-bottom:10px;}
+.modal-box > p{font-size:13.5px;color:var(--text-soft);line-height:1.8;margin-bottom:20px;}
+.modal-box label{
+  display:block;
+  font-size:12.5px;
+  color:var(--text-soft);
+  margin-bottom:6px;
+}
+.modal-box input,.modal-box textarea{
+  width:100%;
+  border:1px solid var(--gray-line);
+  border-radius:10px;
+  padding:10px 14px;
+  font-size:13.5px;
+  font-family:inherit;
+  margin-bottom:14px;
+  outline:none;
+  transition:.2s;
+  background:var(--gray-bg);
+}
+.modal-box input:focus,.modal-box textarea:focus{border-color:var(--pink);background:#fff;}
+.modal-box textarea{resize:vertical;min-height:86px;}
+.modal-close{
+  position:absolute;
+  top:16px;right:16px;
+  width:30px;height:30px;
+  border-radius:50%;
+  background:var(--gray-bg);
+  color:var(--text-soft);
+  display:flex;align-items:center;justify-content:center;
+  font-size:16px;
+  transition:.2s;
+}
+.modal-close:hover{background:var(--pink-soft);color:var(--pink-deep);}
+.modal-box .btn-primary{width:100%;justify-content:center;}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-wrap">
+  <div class="announce">
+    <span class="dot"></span>
+    <span><b>新片上线：</b>《不是完美妈妈，也是好妈妈》第一集已发布 · 亲子共创挑战赛报名中</span>
+    <a href="#updates">查看全部更新 →</a>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#top" class="brand">
+        <div class="brand-logo">义</div>
+        <div class="brand-text">
+          <b>义姐是不良妈妈</b>
+          <span>YIJIE · FAMILY FILM</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#top" class="active">首页</a>
+        <a href="#spotlight">焦点视频</a>
+        <a href="#topics">专题企划</a>
+        <a href="#creators">创作者</a>
+        <a href="#stories">故事</a>
+        <a href="#gallery">影像墙</a>
+        <a href="#updates">品牌动态</a>
+        <a href="#contact">联系我们</a>
+      </nav>
+
+      <div class="header-tools">
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="搜索视频、创作者或专题" autocomplete="off">
+          <span class="s-ico">🔍</span>
+          <div class="search-tip" id="searchTip"></div>
+        </div>
+        <button class="btn-sub" data-open="submit">投稿入口</button>
+        <button class="menu-toggle" id="menuToggle" aria-label="展开导航">☰</button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="top">
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="sec-tag">义姐是不良妈妈 · 官方网站</span>
+          <h1>义姐是不良妈妈，把<em>不完美</em>的日子过成光</h1>
+          <p class="lead">一个关于真实、陪伴与成长的家庭影像品牌。</p>
+          <p class="intro">
+            义姐是不良妈妈作为一家深耕亲子生活领域的原创视频品牌，我们相信“不良”只是外界贴的标签，真实的陪伴从来不需要完美。
+            平台以家庭日常为切口，持续输出治愈系影像、育儿经验访谈与代际沟通观察，为普通家庭搭建一个有温度的内容生态。
+            从厨房的鸡飞狗跳，到深夜书桌旁的轻声细语，我们记录每一个值得被看见的瞬间，也用专业与匠心陪伴每一位正在摸索的父母。
+          </p>
+          <div class="hero-actions">
+            <a href="#spotlight" class="btn-primary">▶ 走进焦点视频</a>
+            <a href="#stories" class="btn-ghost">读我们的故事</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <b data-count="286">286+</b>
+              <span>原创家庭影像</span>
+            </div>
+            <div class="stat">
+              <b data-count="42">42万</b>
+              <span>社区家庭关注</span>
+            </div>
+            <div class="stat">
+              <b data-count="6">6年</b>
+              <span>持续运营陪伴</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="main-img">
+            <img id="heroImg" alt="义姐在不完美厨房里手忙脚乱地准备亲子早餐的温暖画面" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 680'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23fbd9e4'/%3E%3Cstop offset='1' stop-color='%23d9c6ec'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='680' fill='url(%23bg)'/%3E%3Ccircle cx='620' cy='130' r='110' fill='%23ffffff' opacity='.35'/%3E%3Ccircle cx='160' cy='560' r='90' fill='%23ffffff' opacity='.28'/%3E%3Cpath d='M0 500 Q200 440 400 500 T800 480 V680 H0 Z' fill='%23ffffff' opacity='.35'/%3E%3Crect x='250' y='250' width='300' height='230' rx='24' fill='%23ffffff' opacity='.7'/%3E%3Ccircle cx='400' cy='330' r='46' fill='%23e8829a'/%3E%3Cpath d='M400 300 a30 30 0 1 1 -30 30' stroke='%23c95877' stroke-width='6' fill='none'/%3E%3Crect x='320' y='410' width='160' height='14' rx='7' fill='%23c95877' opacity='.6'/%3E%3Crect x='350' y='440' width='100' height='10' rx='5' fill='%239a7fb8' opacity='.5'/%3E%3Ccircle cx='540' cy='400' r='28' fill='%23f0b27a' opacity='.85'/%3E%3Ccircle cx='250' cy='410' r='20' fill='%239a7fb8' opacity='.8'/%3E%3Ctext x='400' y='620' text-anchor='middle' font-family='sans-serif' font-size='26' fill='%23ffffff' opacity='.85'%3E义姐的家 · 不完美日常%3C/text%3E%3C/svg%3E">
+          </div>
+          <div class="float-card">
+            <div class="fc-ico">🎬</div>
+            <div>
+              <b>本周更新 3 条</b>
+              <span>真实家庭记录 · 持续陪伴</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 焦点内容 ========== -->
+  <section class="spotlight" id="spotlight">
+    <div class="container">
+      <div class="sec-head">
+        <div class="sec-title">
+          <b>焦点视频</b>
+          <span>精选正版原创内容，看见不完美家庭里的温柔力量</span>
+        </div>
+        <a href="#feed" class="sec-more">浏览全部视频 →</a>
+      </div>
+
+      <div class="focus-grid">
+        <!-- 大卡片 -->
+        <article class="vcard big">
+          <div class="cover">
+            <img alt="义姐面对镜头讲述自己不是完美妈妈的真实心路的封面" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 440'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23c95877'/%3E%3Cstop offset='1' stop-color='%239a7fb8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='440' fill='url(%23g1)'/%3E%3Ccircle cx='500' cy='100' r='90' fill='%23ffffff' opacity='.14'/%3E%3Ccircle cx='120' cy='360' r='70' fill='%23ffffff' opacity='.1'/%3E%3Crect x='180' y='120' width='280' height='200' rx='20' fill='%23ffffff' opacity='.16'/%3E%3Ccircle cx='320' cy='210' r='44' fill='%23fbe8ed' opacity='.9'/%3E%3Cpath d='M320 190 a24 24 0 1 1 -24 24' stroke='%23e8829a' stroke-width='6' fill='none'/%3E%3Crect x='220' y='270' width='200' height='12' rx='6' fill='%23ffffff' opacity='.55'/%3E%3Crect x='260' y='292' width='120' height='8' rx='4' fill='%23ffffff' opacity='.4'/%3E%3Ctext x='320' y='392' text-anchor='middle' font-family='sans-serif' font-size='20' fill='%23ffffff' opacity='.85'%3EEP.01 不完美妈妈自白%3C/text%3E%3C/svg%3E">
+            <span class="badge">焦点 · 品牌自述</span>
+            <span class="dur">18:42</span>
+            <div class="play"><div class="play-btn"></div></div>
+          </div>
+          <div class="body">
+            <h3>《不是完美妈妈，也是好妈妈》EP.01｜义姐的自白</h3>
+            <p>承认自己“不良”，是义姐做过最有勇气的事。这期品牌自述里，她聊起那些被误解的瞬间、深夜的崩溃，也聊起孩子一句“妈妈你其实很好”带来的释然。</p>
+            <div class="meta">
+              <div class="author">
+                <span class="avatar a1">义</span>
+                <span>义姐是不良妈妈</span>
+              </div>
+              <div class="acts">
+                <button class="act-btn like-btn" data-base="3621"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg><span>3621</span></button>
+                <button class="act-btn fav-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z"/></svg><span>收藏</span></button>
+                <button class="act-btn share-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg><span>分享</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 小卡1 -->
+        <article class="vcard">
+          <div class="cover">
+            <img alt="义姐厨房实录——失败早餐也能被孩子吃光的温馨封面" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='g2' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f0b27a'/%3E%3Cstop offset='1' stop-color='%23e8829a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23g2)'/%3E%3Ccircle cx='160' cy='90' r='60' fill='%23ffffff' opacity='.2'/%3E%3Ccircle cx='520' cy='280' r='80' fill='%23ffffff' opacity='.16'/%3E%3Crect x='230' y='150' width='180' height='110' rx='55' fill='%23fbe8ed' opacity='.9'/%3E%3Crect x='270' y='180' width='100' height='14' rx='7' fill='%23c95877' opacity='.6'/%3E%3Crect x='290' y='206' width='60' height='10' rx='5' fill='%23e8829a' opacity='.6'/%3E%3Ctext x='320' y='322' text-anchor='middle' font-family='sans-serif' font-size='17' fill='%23ffffff' opacity='.8'%3E厨房里的不完美早餐%3C/text%3E%3C/svg%3E">
+            <span class="badge">日常记录</span>
+            <span class="dur">09:17</span>
+            <div class="play"><div class="play-btn"></div></div>
+          </div>
+          <div class="body">
+            <h3>煎糊的蛋和一碗热粥，是我给孩子的早餐</h3>
+            <p>不摆盘、不精致，孩子却吃得干干净净。厨房实录里藏着普通家庭最踏实的温度。</p>
+            <div class="meta">
+              <div class="author"><span class="avatar a3">厨</span><span>义姐厨房日记</span></div>
+              <div class="acts">
+                <button class="act-btn like-btn" data-base="1284"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg><span>1284</span></button>
+                <button class="act-btn fav-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z"/></svg><span>收藏</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 小卡2 -->
+        <article class="vcard">
+          <div class="cover">
+            <img alt="青春期孩子和妈妈在公园长椅上对话的治愈影像封面" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='g3' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237fb8a4'/%3E%3Cstop offset='1' stop-color='%235f7fb8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23g3)'/%3E%3Ccircle cx='520' cy='80' r='50' fill='%23ffffff' opacity='.25'/%3E%3Cpath d='M0 280 Q160 230 320 270 T640 250 V360 H0 Z' fill='%23ffffff' opacity='.18'/%3E%3Crect x='250' y='190' width='140' height='16' rx='8' fill='%23fbe8ed' opacity='.85'/%3E%3Crect x='280' y='212' width='80' height='10' rx='5' fill='%23ffffff' opacity='.6'/%3E%3Ccircle cx='280' cy='150' r='26' fill='%23fbe8ed' opacity='.9'/%3E%3Ccircle cx='370' cy='150' r='22' fill='%23f0b27a' opacity='.9'/%3E%3Ctext x='320' y='325' text-anchor='middle' font-family='sans-serif' font-size='17' fill='%23ffffff' opacity='.8'%3E长椅上的青春期对话%3C/text%3E%3C/svg%3E">
+            <span class="badge">人物访谈</span>
+            <span class="dur">22:05</span>
+            <div class="play"><div class="play-btn"></div></div>
+          </div>
+          <div class="body">
+            <h3>孩子说“你别管我”，我在公园坐了两小时</h3>
+            <p>一场青春期与更年期的正面碰撞。对话访谈记录那些说不出口的爱与别扭。</p>
+            <div class="meta">
+              <div class="author"><span class="avatar a4">谈</span><span>义姐对话录</span></div>
+              <div class="acts">
+                <button class="act-btn like-btn" data-base="967"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg><span>967</span></button>
+                <button class="act-btn fav-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z"/></svg><span>收藏</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 小卡3 -->
+        <article class="vcard">
+          <div class="cover">
+            <img alt="衣柜收纳大作战亲子整理现场的视频封面" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='g4' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%239a7fb8'/%3E%3Cstop offset='1' stop-color='%23e8829a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23g4)'/%3E%3Crect x='180' y='90' width='280' height='180' rx='18' fill='%23ffffff' opacity='.2'/%3E%3Crect x='210' y='120' width='70' height='120' rx='8' fill='%23fbe8ed' opacity='.8'/%3E%3Crect x='295' y='120' width='70' height='120' rx='8' fill='%23f0b27a' opacity='.8'/%3E%3Crect x='380' y='120' width='50' height='120' rx='8' fill='%23ffffff' opacity='.7'/%3E%3Ctext x='320' y='322' text-anchor='middle' font-family='sans-serif' font-size='17' fill='%23ffffff' opacity='.85'%3E亲子收纳大作战%3C/text%3E%3C/svg%3E">
+            <span class="badge">实用技巧</span>
+            <span class="dur">11:36</span>
+            <div class="play"><div class="play-btn"></div></div>
+          </div>
+          <div class="body">
+            <h3>衣柜越整越乱？我和孩子摸索出的收纳法</h3>
+            <p>不是精致样板间，是能维持三天的真实收纳。孩子参与之后，混乱竟然少了一半。</p>
+            <div class="meta">
+              <div class="author"><span class="avatar a2">收</span><span>义姐家事研究所</span></div>
+              <div class="acts">
+                <button class="act-btn like-btn" data-base="743"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg><span>743</span></button>
+                <button class="act-btn fav-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z"/></svg><span>收藏</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 小卡4 -->
+        <article class="vcard">
+          <div class="cover">
+            <img alt="义姐抱着家里老猫在阳台晒太阳的温柔记录封面" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='g5' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23d9c6ec'/%3E%3Cstop offset='1' stop-color='%23fbd9e4'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23g5)'/%3E%3Ccircle cx='320' cy='180' r='90' fill='%23ffffff' opacity='.4'/%3E%3Cellipse cx='300' cy='190' rx='60' ry='38' fill='%23e8829a' opacity='.75'/%3E%3Ccircle cx='300' cy='152' r='30' fill='%23e8829a' opacity='.85'/%3E%3Cpath d='M285 145 l-8 -18 l14 10 Z' fill='%23c95877'/%3E%3Cpath d='M315 145 l8 -18 l-14 10 Z' fill='%23c95877'/%3E%3Ccircle cx='290' cy='152' r='4' fill='%233a3340'/%3E%3Ccircle cx='310' cy='152' r='4' fill='%233a3340'/%3E%3Ctext x='320' y='322' text-anchor='middle' font-family='sans-serif' font-size='17' fill='%23ffffff' opacity='.9'%3E阳台上的老猫时光%3C/text%3E%3C/svg%3E">
+            <span class="badge">治愈影像</span>
+            <span class="dur">07:28</span>
+            <div class="play"><div class="play-btn"></div></div>
+          </div>
+          <div class="body">
+            <h3>家里那只十五岁的猫，教孩子学会了告别</h3>
+            <p>老猫、阳台和晒太阳的下午。义姐用一段慢镜头，讲了一个关于生命与温柔的故事。</p>
+            <div class="meta">
+              <div class="author"><span class="avatar a6">猫</span><span>义姐的慢镜头</span></div>
+              <div class="acts">
+                <button class="act-btn like-btn" data-base="1589"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg><span>1589</span></button>
+                <button class="act-btn fav-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z"/></svg><span>收藏</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 视频流 ========== -->
+  <section class="videofeed" id="feed">
+    <div class="container">
+      <div class="sec-head">
+        <div class="sec-title">
+          <b>热门视频流</b>
+          <span>来自社区创作者的真实家庭记录，多元视角，持续更新</span>
+        </div>
+        <a href="#contact" class="sec-more">成为创作者 →</a>
+      </div>
+
+      <div class="filter-bar" id="filterBar">
+        <button class="chip on" data-filter="全部">全部</button>
+        <button class="chip" data-filter="日常记录">日常记录</button>
+        <button class="chip" data-filter="经验分享">经验分享</button>
+        <button class="chip" data-filter="人物访谈">人物访谈</button>
+        <button class="chip" data-filter="亲子成长">亲子成长</button>
+        <button class="chip" data-filter="实用技巧">实用技巧</button>
+      </div>
+
+      <div class="feed-grid" id="feedGrid">
+        <article class="vcard" data-cat="日常记录">
+          <div class="cover">
+            <img alt="义姐早起送孩子上学路上的地铁日常记录封面" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%238aa8d8'/%3E%3Cstop offset='1' stop-color='%239a7fb8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23f1)'/%3E%3Crect x='0' y='240' width='640' height='120' fill='%23ffffff' opacity='.14'/%3E%3Ccircle cx='480' cy='90' r='40' fill='%23fbe8ed' opacity='.8'/%3E%3Crect x='220' y='150' width='200' height='90' rx='14' fill='%23ffffff' opacity='.3'/%3E%3Ccircle cx='270' cy='150' r='20' fill='%23fbe8ed' opacity='.85'/%3E%3Ccircle cx='330' cy='150' r='16' fill='%23f0b27a' opacity='.85'/%3E%3Crect x='240' y='180' width='160' height='40' rx='20' fill='%23ffffff' opacity='.25'/%3E%3Ctext x='320' y='325' text-anchor='middle' font-family='sans-serif' font-size='16' fill='%23ffffff' opacity='.85'%3E早高峰的送学路%3C/text%3E%3C/svg%3E">
+            <span class="badge">日常记录</span>
+            <span class="dur">06:44</span>
+            <div class="play"><div class="play-btn"></div></div>
+          </div>
+          <div class="body">
+            <h3>六点半的地铁，我和孩子共享一副耳机</h3>
+            <p>送学路上的半小时，是一天里最安静的亲子时刻。城市还没醒，我们已经在路上。</p>
+            <div class="meta">
+              <div class="author"><span class="avatar a5">路</span><span>义姐通勤手记</span></div>
+              <div class="acts">
+                <button class="act-btn like-btn" data-base="523"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg><span>523</span></button>
+                <button class="act-btn fav-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z"/></svg><span>收藏</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="vcard" data-cat="经验分享">
+          <div class="cover">
+            <img alt="义姐分享如何跟孩子谈成绩的家庭对话场景封面" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='f2' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f0b27a'/%3E%3Cstop offset='1' stop-color='%23e8829a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23f2)'/%3E%3Crect x='150' y='110' width='340' height='150' rx='16' fill='%23ffffff' opacity='.22'/%3E%3Crect x='190' y='145' width='120' height='14' rx='7' fill='%23ffffff' opacity='.7'/%3E%3Crect x='190' y='172' width='200' height='10' rx='5' fill='%23ffffff' opacity='.5'/%3E%3Crect x='190' y='195' width='160' height='10' rx='5' fill='%23ffffff' opacity='.5'/%3E%3Ccircle cx='440' cy='175' r='34' fill='%23fbe8ed' opacity='.9'/%3E%3Ctext x='320' y='322' text-anchor='middle' font-family='sans-serif' font-size='16' fill='%23ffffff' opacity='.88'%3E成绩单背后的对话%3C/text%3E%3C/svg%3E">
+            <span class="badge">经验分享</span>
+            <span class="dur">13:52</span>
+            <div class="play"><div class="play-btn"></div></div>
+          </div>
+          <div class="body">
+            <h3>考砸了不骂人，我用了这三句话</h3>
+            <p>从“你怎么这么笨”到“我们一起看看哪里卡住了”。改变说话方式之后，孩子开始主动聊天。</p>
+            <div class="meta">
+              <div class="author"><span class="avatar a1">言</span><span>义姐说说话</span></div>
+              <div class="acts">
+                <button class="act-btn like-btn" data-base="2106"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg><span>2106</span></button>
+                <button class="act-btn fav-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z"/></svg><span>收藏</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="vcard" data-cat="人物访谈">
+          <div class="cover">
+            <img alt="三位不同职业妈妈围坐分享育儿经历的访谈封面" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='f3' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237a5fa0'/%3E%3Cstop offset='1' stop-color='%235f7fb8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23f3)'/%3E%3Ccircle cx='180' cy='170' r='42' fill='%23fbe8ed' opacity='.85'/%3E%3Ccircle cx='320' cy='150' r='48' fill='%23f0b27a' opacity='.85'/%3E%3Ccircle cx='460' cy='170' r='42' fill='%23d9c6ec' opacity='.85'/%3E%3Crect x='140' y='230' width='80' height='14' rx='7' fill='%23ffffff' opacity='.5'/%3E%3Crect x='280' y='220' width='80' height='14' rx='7' fill='%23ffffff' opacity='.5'/%3E%3Crect x='420' y='230' width='80' height='14' rx='7' fill='%23ffffff' opacity='.5'/%3E%3Ctext x='320' y='325' text-anchor='middle' font-family='sans-serif' font-size='16' fill='%23ffffff' opacity='.85'%3E三位妈妈的坦白局%3C/text%3E%3C/svg%3E">
+            <span class="badge">人物访谈</span>
+            <span class="dur">31:08</span>
+            <div class="play"><div class="play-btn"></div></div>
+          </div>
+          <div class="body">
+            <h3>三位妈妈坦白局：我们也想过逃跑</h3>
+            <p>花艺师、程序员、全职妈妈坐在一起，聊崩溃、聊愧疚，也聊那些想偷偷躲起来的时刻。</p>
+            <div class="meta">
+              <div class="author"><span class="avatar a4">访</span><span>义姐访谈室</span></div>
+              <div class="acts">
+                <button class="act-btn like-btn" data-base="3347"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg><span>3347</span></button>
+                <button class="act-btn fav-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z"/></svg><span>收藏</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="vcard" data-cat="亲子成长">
+          <div class="cover">
+            <img alt="孩子第一次学骑自行车父亲在后面扶着的成长记录封面" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='f4' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237fb8a4'/%3E%3Cstop offset='1' stop-color='%23f0b27a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23f4)'/%3E%3Ccircle cx='500' cy='70' r='34' fill='%23fbe8ed' opacity='.8'/%3E%3Ccircle cx='260' cy='250' r='52' fill='none' stroke='%23ffffff' stroke-width='7' opacity='.9'/%3E%3Ccircle cx='400' cy='250' r='52' fill='none' stroke='%23ffffff' stroke-width='7' opacity='.9'/%3E%3Cpath d='M260 250 L330 160 L400 250' stroke='%23ffffff' stroke-width='6' fill='none' opacity='.9'/%3E%3Ccircle cx='330' cy='135' r='18' fill='%23fbe8ed' opacity='.9'/%3E%3Crect x='0' y='290' width='640' height='70' fill='%23ffffff' opacity='.14'/%3E%3Ctext x='320' y='330' text-anchor='middle' font-family='sans-serif' font-size='16' fill='%23ffffff' opacity='.88'%3E第一次骑车不摔倒%3C/text%3E%3C/svg%3E">
+            <span class="badge">亲子成长</span>
+            <span class="dur">10:21</span>
+            <div class="play"><div class="play-btn"></div></div>
+          </div>
+          <div class="body">
+            <h3>松开手的第七秒，他自己骑走了</h3>
+            <p>学车的第三十天，从扶着到松手。成长有时就是一个很短的镜头，却让人记很久。</p>
+            <div class="meta">
+              <div class="author"><span class="avatar a3">长</span><span>义姐成长记</span></div>
+              <div class="acts">
+                <button class="act-btn like-btn" data-base="1874"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg><span>1874</span></button>
+                <button class="act-btn fav-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z"/></svg><span>收藏</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="vcard" data-cat="实用技巧">
+          <div class="cover">
+            <img alt="义姐教孩子做暑假计划的桌面手账实用技巧封面" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='f5' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23d9c6ec'/%3E%3Cstop offset='1' stop-color='%238aa8d8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23f5)'/%3E%3Crect x='190' y='80' width='260' height='200' rx='14' fill='%23ffffff' opacity='.25'/%3E%3Crect x='220' y='110' width='80' height='10' rx='5' fill='%23ffffff' opacity='.7'/%3E%3Crect x='220' y='135' width='160' height='8' rx='4' fill='%23ffffff' opacity='.5'/%3E%3Crect x='220' y='158' width='130' height='8' rx='4' fill='%23ffffff' opacity='.5'/%3E%3Crect x='220' y='181' width='150' height='8' rx='4' fill='%23ffffff' opacity='.5'/%3E%3Crect x='220' y='210' width='60' height='26' rx='13' fill='%23f0b27a' opacity='.9'/%3E%3Ctext x='320' y='322' text-anchor='middle' font-family='sans-serif' font-size='16' fill='%23ffffff' opacity='.88'%3E暑期计划手账法%3C/text%3E%3C/svg%3E">
+            <span class="badge">实用技巧</span>
+            <span class="dur">08:55</span>
+            <div class="play"><div class="play-btn"></div></div>
+          </div>
+          <div class="body">
+            <h3>暑假计划这样做，孩子自己愿意执行</h3>
+            <p>把“家长排表”换成“一起画表”。一个手账本、三色笔，让计划从对抗变成约定。</p>
+            <div class="meta">
+              <div class="author"><span class="avatar a2">计</span><span>义姐方法论</span></div>
+              <div class="acts">
+                <button class="act-btn like-btn" data-base="1102"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg><span>1102</span></button>
+                <button class="act-btn fav-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z"/></svg><span>收藏</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="vcard" data-cat="日常记录">
+          <div class="cover">
+            <img alt="下雨天义姐和孩子在家做手工剪纸的温馨日常封面" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='f6' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23e8829a'/%3E%3Cstop offset='1' stop-color='%23d9c6ec'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23f6)'/%3E%3Cpath d='M0 0 L140 0 L0 140 Z' fill='%23ffffff' opacity='.18'/%3E%3Cpath d='M640 360 L500 360 L640 220 Z' fill='%23ffffff' opacity='.18'/%3E%3Ccircle cx='320' cy='180' r='64' fill='%23ffffff' opacity='.35'/%3E%3Cpath d='M280 160 L360 160 L340 210 L300 210 Z' fill='%23c95877' opacity='.75'/%3E%3Ccircle cx='320' cy='145' r='18' fill='%23f0b27a' opacity='.9'/%3E%3Ctext x='320' y='322' text-anchor='middle' font-family='sans-serif' font-size='16' fill='%23ffffff' opacity='.9'%3E雨天手工下午%3C/text%3E%3C/svg%3E">
+            <span class="badge">日常记录</span>
+            <span class="dur">07:03</span>
+            <div class="play"><div class="play-btn"></div></div>
+          </div>
+          <div class="body">
+            <h3>下雨不能出门，我们把客厅变成了手工角</h3>
+            <p>废纸、胶带、一把剪刀。孩子的想象力比任何玩具都热闹，那天我们剪了一整墙的窗花。</p>
+            <div class="meta">
+              <div class="author"><span class="avatar a1">手</span><span>义姐的手工课</span></div>
+              <div class="acts">
+                <button class="act-btn like-btn" data-base="896"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg><span>896</span></button>
+                <button class="act-btn fav-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z"/></svg><span>收藏</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 专题企划 ========== -->
+  <section class="topics" id="topics">
+    <div class="container">
+      <div class="sec-head">
+        <div class="sec-title">
+          <b>专题企划</b>
+          <span>围绕家庭与成长展开的深度内容企划，官方持续运营</span>
+        </div>
+        <a href="#updates" class="sec-more">企划进度 →</a>
+      </div>
+
+      <div class="topic-grid">
+        <a class="topic-card" href="#spotlight">
+          <img alt="不完美妈妈系列专题封面，暖粉色调的家庭剪影" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 540'%3E%3Cdefs%3E%3ClinearGradient id='t1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23c95877'/%3E%3Cstop offset='1' stop-color='%239a7fb8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='540' fill='url(%23t1)'/%3E%3Ccircle cx='320' cy='100' r='70' fill='%23ffffff' opacity='.16'/%3E%3Ccircle cx='200' cy='260' r='66' fill='%23fbe8ed' opacity='.85'/%3E%3Ccircle cx='150' cy='320' r='40' fill='%23fbe8ed' opacity='.6'/%3E%3Ccircle cx='250' cy='320' r='40' fill='%23fbe8ed' opacity='.6'/%3E%3Crect x='120' y='370' width='160' height='14' rx='7' fill='%23ffffff' opacity='.5'/%3E%3Ctext x='200' y='460' text-anchor='middle' font-family='sans-serif' font-size='22' fill='%23ffffff' opacity='.9'%3E不完美妈妈计划%3C/text%3E%3C/svg%3E">
+          <div class="overlay">
+            <span class="t-tag">品牌自述企划</span>
+            <h3>不完美妈妈计划</h3>
+            <p>十二位普通母亲的坦白访谈，记录那些不被称赞却无比真实的育儿瞬间。</p>
+            <span class="t-status">● 更新至 08 期 · 持续更新</span>
+          </div>
+        </a>
+
+        <a class="topic-card" href="#creators">
+          <img alt="厨房里的代际关系专题封面，琥珀色蒸汽与碗碟意象" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 540'%3E%3Cdefs%3E%3ClinearGradient id='t2' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f0b27a'/%3E%3Cstop offset='1' stop-color='%23c95877'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='540' fill='url(%23t2)'/%3E%3Ccircle cx='90' cy='120' r='56' fill='%23ffffff' opacity='.2'/%3E%3Cellipse cx='200' cy='300' rx='90' ry='26' fill='%23ffffff' opacity='.3'/%3E%3Cpath d='M140 300 Q200 340 260 300 L250 370 L150 370 Z' fill='%23fbe8ed' opacity='.8'/%3E%3Cpath d='M180 250 q10 -24 0 -40 M200 250 q12 -28 0 -48 M220 250 q10 -24 0 -40' stroke='%23ffffff' stroke-width='5' fill='none' opacity='.7'/%3E%3Ctext x='200' y='460' text-anchor='middle' font-family='sans-serif' font-size='22' fill='%23ffffff' opacity='.9'%3E厨房里的两代人%3C/text%3E%3C/svg%3E">
+          <div class="overlay">
+            <span class="t-tag">家庭关系企划</span>
+            <h3>厨房里的两代人</h3>
+            <p>婆媳、母女、祖孙，在灶台边重新认识彼此。六期纪实，六顿家常饭。</p>
+            <span class="t-status">● 更新至 06 期 · 已完结</span>
+          </div>
+        </a>
+
+        <a class="topic-card" href="#gallery">
+          <img alt="城市亲子地图专题封面，蓝灰色调的街景与手绘路线" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 540'%3E%3Cdefs%3E%3ClinearGradient id='t3' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%235f7fb8'/%3E%3Cstop offset='1' stop-color='%237fb8a4'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='540' fill='url(%23t3)'/%3E%3Ccircle cx='300' cy='110' r='46' fill='%23fbe8ed' opacity='.6'/%3E%3Cpath d='M60 400 L120 320 L180 380 L250 280 L330 360' stroke='%23ffffff' stroke-width='6' fill='none' stroke-dasharray='12 10' opacity='.85'/%3E%3Ccircle cx='120' cy='320' r='10' fill='%23ffffff' opacity='.9'/%3E%3Ccircle cx='250' cy='280' r='10' fill='%23ffffff' opacity='.9'/%3E%3Crect x='80' y='430' width='240' height='12' rx='6' fill='%23ffffff' opacity='.4'/%3E%3Ctext x='200' y='485' text-anchor='middle' font-family='sans-serif' font-size='22' fill='%23ffffff' opacity='.9'%3E亲子城市地图%3C/text%3E%3C/svg%3E">
+          <div class="overlay">
+            <span class="t-tag">城市探索企划</span>
+            <h3>亲子城市地图</h3>
+            <p>带娃走遍城市的角角落落，博物馆、旧书店、菜市场，都是最好的课堂。</p>
+            <span class="t-status">● 更新至 14 期 · 持续更新</span>
+          </div>
+        </a>
+
+        <a class="topic-card" href="#stories">
+          <img alt="深夜书房专题封面，深紫夜色中的台灯光晕" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 540'%3E%3Cdefs%3E%3ClinearGradient id='t4' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%233a3340'/%3E%3Cstop offset='1' stop-color='%237a5fa0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='540' fill='url(%23t4)'/%3E%3Ccircle cx='200' cy='220' r='110' fill='%23f0b27a' opacity='.18'/%3E%3Cpath d='M120 320 L280 320 L250 380 L150 380 Z' fill='%23fbe8ed' opacity='.5'/%3E%3Cpath d='M200 180 L200 320' stroke='%23f0b27a' stroke-width='5' opacity='.8'/%3E%3Ccircle cx='200' cy='175' r='16' fill='%23f0b27a' opacity='.9'/%3E%3Ctext x='200' y='450' text-anchor='middle' font-family='sans-serif' font-size='22' fill='%23ffffff' opacity='.9'%3E深夜书桌旁%3C/text%3E%3C/svg%3E">
+          <div class="overlay">
+            <span class="t-tag">情感故事企划</span>
+            <h3>深夜书桌旁</h3>
+            <p>孩子睡后，父母们的两小时。关于自我、疲惫与重新出发的短纪录片系列。</p>
+            <span class="t-status">● 更新至 09 期 · 持续更新</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 创作者矩阵 ========== -->
+  <section class="creators" id="creators">
+    <div class="container">
+      <div class="sec-head">
+        <div class="sec-title">
+          <b>创作者矩阵</b>
+          <span>社区里的真实记录者，用镜头写下各自的家庭章节</span>
+        </div>
+        <a href="#contact" class="sec-more">申请入驻 →</a>
+      </div>
+
+      <div class="creator-grid">
+        <div class="creator-card">
+          <button class="cc-follow" data-follow>+ 关注</button>
+          <div class="cc-top">
+            <div class="cc-avatar a1">义</div>
+            <div class="cc-name">
+              <b>义姐是不良妈妈</b>
+              <span>品牌主理人 · 亲子日常</span>
+            </div>
+          </div>
+          <p class="cc-desc">不完美主义育儿实践者。拍自己煎糊的蛋，也拍孩子偷偷塞进书包的道歉纸条。相信真实比精致更有力量。</p>
+          <div class="cc-stats">
+            <div><b>286</b>作品</div>
+            <div><b>42.6万</b>关注</div>
+            <div><b>1.2亿</b>播放</div>
+          </div>
+        </div>
+
+        <div class="creator-card">
+          <button class="cc-follow" data-follow>+ 关注</button>
+          <div class="cc-top">
+            <div class="cc-avatar a4">谈</div>
+            <div class="cc-name">
+              <b>义姐访谈室</b>
+              <span>人物访谈 · 深度对话</span>
+            </div>
+          </div>
+          <p class="cc-desc">专注家庭关系与代际沟通的访谈栏目。镜头对准普通人，让每一句磕磕绊绊的真心话都被听见。</p>
+          <div class="cc-stats">
+            <div><b>64</b>作品</div>
+            <div><b>18.3万</b>关注</div>
+            <div><b>5600万</b>播放</div>
+          </div>
+        </div>
+
+        <div class="creator-card">
+          <button class="cc-follow" data-follow>+ 关注</button>
+          <div class="cc-top">
+            <div class="cc-avatar a3">厨</div>
+            <div class="cc-name">
+              <b>义姐厨房日记</b>
+              <span>美食烹饪 · 生活记录</span>
+            </div>
+          </div>
+          <p class="cc-desc">不做精致摆盘，只做孩子爱吃、大人省力的家常菜。一锅一铲，记录三餐四季里的烟火气。</p>
+          <div class="cc-stats">
+            <div><b>132</b>作品</div>
+            <div><b>25.8万</b>关注</div>
+            <div><b>7800万</b>播放</div>
+          </div>
+        </div>
+
+        <div class="creator-card">
+          <button class="cc-follow" data-follow>+ 关注</button>
+          <div class="cc-top">
+            <div class="cc-avatar a2">方</div>
+            <div class="cc-name">
+              <b>义姐方法论</b>
+              <span>实用技巧 · 家庭教育</span>
+            </div>
+          </div>
+          <p class="cc-desc">把教育理论拆成能落地的家庭小工具：怎么定规则、怎么开家庭会议、怎么和孩子谈钱。</p>
+          <div class="cc-stats">
+            <div><b>98</b>作品</div>
+            <div><b>31.2万</b>关注</div>
+            <div><b>9200万</b>播放</div>
+          </div>
+        </div>
+
+        <div class="creator-card">
+          <button class="cc-follow" data-follow>+ 关注</button>
+          <div class="cc-top">
+            <div class="cc-avatar a6">慢</div>
+            <div class="cc-name">
+              <b>义姐的慢镜头</b>
+              <span>治愈影像 · 情感故事</span>
+            </div>
+          </div>
+          <p class="cc-desc">用慢镜头记录家里的猫、阳台的光和渐渐长大的孩子。在一个追求快速的世界里，坚持拍慢的东西。</p>
+          <div class="cc-stats">
+            <div><b>77</b>作品</div>
+            <div><b>14.5万</b>关注</div>
+            <div><b>4100万</b>播放</div>
+          </div>
+        </div>
+
+        <div class="creator-card">
+          <button class="cc-follow" data-follow>+ 关注</button>
+          <div class="cc-top">
+            <div class="cc-avatar a5">路</div>
+            <div class="cc-name">
+              <b>义姐通勤手记</b>
+              <span>都市生活 · 职场日常</span>
+            </div>
+          </div>
+          <p class="cc-desc">双职工家庭的通勤时间切片。地铁、路口、接送点，那些看似重复却悄悄变化的日子。</p>
+          <div class="cc-stats">
+            <div><b>58</b>作品</div>
+            <div><b>9.8万</b>关注</div>
+            <div><b>2700万</b>播放</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 故事随笔 ========== -->
+  <section class="stories" id="stories">
+    <div class="container">
+      <div class="sec-head">
+        <div class="sec-title">
+          <b>故事与随笔</b>
+          <span>镜头之外，那些没有被剪进视频的片段</span>
+        </div>
+        <a href="#gallery" class="sec-more">看影像墙 →</a>
+      </div>
+
+      <div class="story-layout">
+        <div class="story-main">
+          <h3>写给孩子的一封信：关于“不良妈妈”这件事</h3>
+          <p>
+            那天你把我的视频转给同学，说“这是我妈做的”，然后又悄悄问我：妈妈，你为什么叫自己不良妈妈？
+            我愣了一下。其实这个词最初来自你外婆，她总说我这个当妈的太随性，饭做得粗糙、衣服叠得歪，
+            连开家长会都记错时间。后来我想，那就把这个标签捡起来，擦干净，放在镜头前面。
+            因为我知道，有一群和我一样的父母，正在因为不够完美而偷偷自责。
+            我们不缺席责任，只是不再假装无所不能。写下这些，是想让你知道：
+            妈妈并不完美，但妈妈会一直在。你在成长，我也在成长，我们互相陪伴，这就够了。
+          </p>
+          <div class="story-author">
+            <span class="avatar a1">义</span>
+            <div>
+              <b style="font-size:13.5px;">义姐是不良妈妈</b>
+              <div style="font-size:11.5px;color:var(--text-soft);">品牌主理人 · 2024 年秋</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="story-list">
+          <article class="story-item">
+            <div class="si-head">
+              <span class="tag">拍摄手记</span>
+              <time>2025-03-12</time>
+            </div>
+            <h4>那期“煎糊的蛋”，我们重拍了四次</h4>
+            <p>为了保留最真实的慌乱感，团队决定不预设流程。结果第一锅糊了，第二锅孩子把盐当糖……最后用的，是最手忙脚乱的那一条。</p>
+          </article>
+
+          <article class="story-item">
+            <div class="si-head">
+              <span class="tag">观众来信</span>
+              <time>2025-02-27</time>
+            </div>
+            <h4>一位爸爸留言：我第一次在孩子面前道歉</h4>
+            <p>他说看完访谈那期，蹲下来跟儿子说“爸爸昨天吼你不对”。儿子愣了很久，然后抱了他一下。这条留言我们看了很多遍。</p>
+          </article>
+
+          <article class="story-item">
+            <div class="si-head">
+              <span class="tag">幕后观察</span>
+              <time>2025-02-08</time>
+            </div>
+            <h4>拍家庭，最难的永远是“别演”</h4>
+            <p>摄像机的存在本身就会改变一个家庭的样子。我们花了大量时间等待——等到大家忘记镜头，忘记要说“正确的话”。</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 影像墙 ========== -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="sec-head">
+        <div class="sec-title">
+          <b>影像墙</b>
+          <span>社区用户与品牌团队的影像碎片，每一张都有它的来历</span>
+        </div>
+        <a href="#contact" class="sec-more">上传你的作品 →</a>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="g-item w3">
+          <img alt="义姐和孩子在阳台上晾衣服的清晨光影照片" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Cdefs%3E%3ClinearGradient id='w1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23fbd9e4'/%3E%3Cstop offset='1' stop-color='%23d9c6ec'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='600' height='400' fill='url(%23w1)'/%3E%3Ccircle cx='480' cy='90' r='56' fill='%23ffffff' opacity='.5'/%3E%3Cpath d='M0 320 Q150 280 300 320 T600 300 V400 H0 Z' fill='%23ffffff' opacity='.25'/%3E%3Cpath d='M100 150 L500 150' stroke='%23e8829a' stroke-width='4' opacity='.6'/%3E%3Crect x='130' y='150' width='60' height='90' rx='6' fill='%23ffffff' opacity='.7'/%3E%3Crect x='230' y='150' width='50' height='100' rx='6' fill='%23f0b27a' opacity='.7'/%3E%3Crect x='320' y='150' width='70' height='80' rx='6' fill='%23ffffff' opacity='.6'/%3E%3Ctext x='300' y='372' text-anchor='middle' font-family='sans-serif' font-size='17' fill='%23ffffff' opacity='.9'%3E阳台上晾衣服的清晨%3C/text%3E%3C/svg%3E">
+          <div class="g-info"><b>阳台上晾衣服的清晨</b><span>品牌团队 · 日常记录</span></div>
+        </div>
+        <div class="g-item w2h">
+          <img alt="孩子画的全家福画作特写照片" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect width='400' height='200' fill='%23fbe8ed'/%3E%3Ccircle cx='120' cy='90' r='26' fill='%23e8829a' opacity='.8'/%3E%3Ccircle cx='200' cy='80' r='30' fill='%239a7fb8' opacity='.8'/%3E%3Ccircle cx='280' cy='90' r='24' fill='%23f0b27a' opacity='.8'/%3E%3Cpath d='M100 140 Q200 170 300 140' stroke='%23c95877' stroke-width='5' fill='none' opacity='.6'/%3E%3Ctext x='200' y='190' text-anchor='middle' font-family='sans-serif' font-size='13' fill='%239a7fb8'%3E孩子笔下的全家福%3C/text%3E%3C/svg%3E">
+          <div class="g-info"><b>孩子笔下的全家福</b><span>社区投稿 · 亲子成长</span></div>
+        </div>
+        <div class="g-item w2h">
+          <img alt="深夜厨房里一盏灯和一碗面的静物照片" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect width='400' height='200' fill='%233a3340'/%3E%3Ccircle cx='200' cy='90' r='70' fill='%23f0b27a' opacity='.14'/%3E%3Cpath d='M200 40 L200 90' stroke='%23f0b27a' stroke-width='4' opacity='.8'/%3E%3Ccircle cx='200' cy='36' r='10' fill='%23f0b27a' opacity='.9'/%3E%3Cellipse cx='200' cy='130' rx='52' ry='14' fill='%23fbe8ed' opacity='.55'/%3E%3Cpath d='M160 130 Q200 160 240 130 L230 150 L170 150 Z' fill='%23fbe8ed' opacity='.5'/%3E%3Ctext x='200' y='190' text-anchor='middle' font-family='sans-serif' font-size='13' fill='%23fbe8ed' opacity='.75'%3E深夜的一碗面%3C/text%3E%3C/svg%3E">
+          <div class="g-info"><b>深夜的一碗面</b><span>社区投稿 · 治愈影像</span></div>
+        </div>
+        <div class="g-item w2">
+          <img alt="义姐和孩子一起整理书架的午后照片" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Cdefs%3E%3ClinearGradient id='w4' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237fb8a4'/%3E%3Cstop offset='1' stop-color='%235f7fb8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='400' fill='url(%23w4)'/%3E%3Crect x='60' y='90' width='280' height='220' rx='10' fill='%23ffffff' opacity='.2'/%3E%3Crect x='85' y='120' width='40' height='160' fill='%23fbe8ed' opacity='.7'/%3E%3Crect x='140' y='120' width='50' height='160' fill='%23f0b27a' opacity='.7'/%3E%3Crect x='205' y='120' width='38' height='160' fill='%23ffffff' opacity='.6'/%3E%3Crect x='258' y='120' width='52' height='160' fill='%23d9c6ec' opacity='.7'/%3E%3Ctext x='200' y='372' text-anchor='middle' font-family='sans-serif' font-size='16' fill='%23ffffff' opacity='.9'%3E整理书架的下午%3C/text%3E%3C/svg%3E">
+          <div class="g-info"><b>整理书架的下午</b><span>品牌团队 · 家居收纳</span></div>
+        </div>
+        <div class="g-item w2">
+          <img alt="雨天窗玻璃上水珠与室内暖光的照片" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Cdefs%3E%3ClinearGradient id='w5' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%239a7fb8'/%3E%3Cstop offset='1' stop-color='%23e8829a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='400' fill='url(%23w5)'/%3E%3Ccircle cx='200' cy='200' r='120' fill='%23ffffff' opacity='.14'/%3E%3Ccircle cx='140' cy='140' r='14' fill='%23ffffff' opacity='.5'/%3E%3Ccircle cx='230' cy='170' r='9' fill='%23ffffff' opacity='.45'/%3E%3Ccircle cx='270' cy='260' r='18' fill='%23ffffff' opacity='.4'/%3E%3Ccircle cx='150' cy='280' r='11' fill='%23ffffff' opacity='.4'/%3E%3Ctext x='200' y='372' text-anchor='middle' font-family='sans-serif' font-size='16' fill='%23ffffff' opacity='.9'%3E雨天窗边的光%3C/text%3E%3C/svg%3E">
+          <div class="g-info"><b>雨天窗边的光</b><span>社区投稿 · 治愈影像</span></div>
+        </div>
+        <div class="g-item w3h">
+          <img alt="孩子运动会上奔跑瞬间的连拍照片" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 200'%3E%3Cdefs%3E%3ClinearGradient id='w6' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f0b27a'/%3E%3Cstop offset='1' stop-color='%23e8829a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='600' height='200' fill='url(%23w6)'/%3E%3Ccircle cx='110' cy='100' r='26' fill='%23fbe8ed' opacity='.9'/%3E%3Ccircle cx='230' cy='95' r='22' fill='%23fbe8ed' opacity='.7'/%3E%3Ccircle cx='330' cy='100' r='18' fill='%23fbe8ed' opacity='.5'/%3E%3Ccircle cx='410' cy='100' r='14' fill='%23fbe8ed' opacity='.4'/%3E%3Cpath d='M0 160 H600' stroke='%23ffffff' stroke-width='3' opacity='.5' stroke-dasharray='10 8'/%3E%3Ctext x='300' y='190' text-anchor='middle' font-family='sans-serif' font-size='14' fill='%23ffffff' opacity='.9'%3E运动会上的奔跑瞬间%3C/text%3E%3C/svg%3E">
+          <div class="g-info"><b>运动会上的奔跑瞬间</b><span>品牌团队 · 亲子成长</span></div>
+        </div>
+        <div class="g-item w2h">
+          <img alt="一家人围坐吃火锅热气腾腾的照片" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect width='400' height='200' fill='%23c95877'/%3E%3Ccircle cx='200' cy='110' r='56' fill='%23fbe8ed' opacity='.3'/%3E%3Cellipse cx='200' cy='110' rx='64' ry='20' fill='%23fbe8ed' opacity='.6'/%3E%3Cpath d='M170 110 q10 -24 0 -42 M200 110 q12 -28 0 -50 M230 110 q10 -24 0 -42' stroke='%23ffffff' stroke-width='4' fill='none' opacity='.55'/%3E%3Ctext x='200' y='186' text-anchor='middle' font-family='sans-serif' font-size='13' fill='%23ffffff' opacity='.85'%3E周末的火锅局%3C/text%3E%3C/svg%3E">
+          <div class="g-info"><b>周末的火锅局</b><span>社区投稿 · 日常记录</span></div>
+        </div>
+        <div class="g-item w2h">
+          <img alt="孩子在沙滩上留下小脚印的特写照片" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect width='400' height='200' fill='%238aa8d8'/%3E%3Cpath d='M0 130 Q100 120 200 130 T400 125 V200 H0 Z' fill='%23fbe8ed' opacity='.35'/%3E%3Cellipse cx='140' cy='150' rx='12' ry='18' fill='%23ffffff' opacity='.6'/%3E%3Cellipse cx='180' cy='160' rx='10' ry='15' fill='%23ffffff' opacity='.5'/%3E%3Cellipse cx='230' cy='148' rx='11' ry='16' fill='%23ffffff' opacity='.45'/%3E%3Ccircle cx='320' cy='60' r='30' fill='%23ffffff' opacity='.5'/%3E%3Ctext x='200' y='190' text-anchor='middle' font-family='sans-serif' font-size='13' fill='%23ffffff' opacity='.8'%3E沙滩上的小脚印%3C/text%3E%3C/svg%3E">
+          <div class="g-info"><b>沙滩上的小脚印</b><span>社区投稿 · 旅行见闻</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 用户评价 ========== -->
+  <section class="reviews">
+    <div class="container">
+      <div class="sec-head">
+        <div class="sec-title">
+          <b>社区里的声音</b>
+          <span>来自观众与创作者的真实反馈，口碑是我们最看重的东西</span>
+        </div>
+      </div>
+
+      <div class="review-grid">
+        <div class="review-card">
+          <div class="rc-head">
+            <span class="avatar a2">林</span>
+            <div><b>林女士</b><span>两个孩子的妈妈</span></div>
+          </div>
+          <p class="rc-body">第一次看到有人把我每天经历的那种混乱拍出来，而不是精修过的样子。看完那期访谈，我在厨房站了很久，突然就不那么自责了。</p>
+          <div class="rc-foot"><span class="rc-stars">★★★★★</span><span>2 天前</span></div>
+        </div>
+
+        <div class="review-card">
+          <div class="rc-head">
+            <span class="avatar a5">周</span>
+            <div><b>周先生</b><span>新手爸爸</span></div>
+          </div>
+          <p class="rc-body">这个平台的内容很克制，不煽情也不说教。作为爸爸，我在这里学到了很多具体能做的事，比如怎么开家庭会议、怎么道歉。</p>
+          <div class="rc-foot"><span class="rc-stars">★★★★★</span><span>5 天前</span></div>
+        </div>
+
+        <div class="review-card">
+          <div class="rc-head">
+            <span class="avatar a3">小</span>
+            <div><b>小满</b><span>小学老师</span></div>
+          </div>
+          <p class="rc-body">我把“成绩单背后的对话”那期放给班里的家长看，反响特别好。内容真实，能看到拍摄者是真的在倾听，而不是在表演倾听。</p>
+          <div class="rc-foot"><span class="rc-stars">★★★★★</span><span>1 周前</span></div>
+        </div>
+
+        <div class="review-card">
+          <div class="rc-head">
+            <span class="avatar a1">阿</span>
+            <div><b>阿柚</b><span>社区创作者</span></div>
+          </div>
+          <p class="rc-body">作为投稿作者，最打动我的是编辑会认真回复每一条投稿，告诉我为什么选用、哪里还可以更好。这种认真在现在的平台上不多了。</p>
+          <div class="rc-foot"><span class="rc-stars">★★★★☆</span><span>1 周前</span></div>
+        </div>
+
+        <div class="review-card">
+          <div class="rc-head">
+            <span class="avatar a4">陈</span>
+            <div><b>陈老师</b><span>家庭教育指导师</span></div>
+          </div>
+          <p class="rc-body">内容生态做得比较扎实，专题企划有明显的策划痕迹，不是简单堆素材。作为从业者，我会推荐给来咨询的家庭作为辅助参考。</p>
+          <div class="rc-foot"><span class="rc-stars">★★★★★</span><span>2 周前</span></div>
+        </div>
+
+        <div class="review-card">
+          <div class="rc-head">
+            <span class="avatar a6">暖</span>
+            <div><b>暖阳</b><span>独居青年</span></div>
+          </div>
+          <p class="rc-body">我没有孩子，但会看他家的日常记录。那些不完美的瞬间很治愈，让人觉得生活本来就是这样，不用事事都做到满分。</p>
+          <div class="rc-foot"><span class="rc-stars">★★★★★</span><span>3 周前</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 更新动态 ========== -->
+  <section class="updates" id="updates">
+    <div class="container">
+      <div class="sec-head">
+        <div class="sec-title">
+          <b>品牌动态与更新日志</b>
+          <span>官方发布的最新内容、活动与社区公告</span>
+        </div>
+      </div>
+
+      <div class="update-layout">
+        <div class="update-list">
+          <div class="update-item">
+            <div class="u-date">03 - 18</div>
+            <div class="u-content">
+              <b>《不完美妈妈计划》第 08 期上线：一位单亲爸爸的自述</b>
+              <p>本期我们走进一位独自抚养女儿的父亲，记录他如何从“什么都不会”学到做一桌像样的家常菜。</p>
+            </div>
+          </div>
+          <div class="update-item">
+            <div class="u-date">03 - 12</div>
+            <div class="u-content">
+              <b>“亲子共创挑战赛”报名开启，征集 3 分钟家庭短片</b>
+              <p>面向所有社区创作者开放报名，主题为“我家最普通的一天”，优秀作品将获得官方推荐位与创作基金。</p>
+            </div>
+          </div>
+          <div class="update-item">
+            <div class="u-date">03 - 05</div>
+            <div class="u-content">
+              <b>高清片源升级完成，全站内容支持 1080P 播放</b>
+              <p>本次升级覆盖品牌原创与社区精选内容，播放体验与画面细节均有明显提升，感谢耐心等待。</p>
+            </div>
+          </div>
+          <div class="update-item">
+            <div class="u-date">02 - 26</div>
+            <div class="u-content">
+              <b>《深夜书桌旁》第 09 期发布，话题“重启”引发讨论</b>
+              <p>本期记录三位父母在孩子入睡后重新拾起旧爱好的故事，评论区已有超过两千条留言分享自己的“重启时刻”。</p>
+            </div>
+          </div>
+          <div class="update-item">
+            <div class="u-date">02 - 14</div>
+            <div class="u-content">
+              <b>社区投稿通道优化，支持分镜脚本与成片分开展示</b>
+              <p>创作者现在可以在投稿时同步提交创作脚本与拍摄思路，编辑团队将据此给予更有针对性的反馈。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="update-side">
+          <h3>想被更多人看见吗？</h3>
+          <p>如果你也在记录真实的家庭日常，欢迎把作品上传给我们。品牌团队会认真看完每一条投稿，并在两周内给出反馈。我们寻找的不是完美镜头，而是真实的目光。</p>
+          <button class="us-btn" data-open="submit">✎ 立即投稿 / 报名挑战赛</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section class="faq">
+    <div class="container">
+      <div class="sec-head">
+        <div class="sec-title">
+          <b>常见问题</b>
+          <span>关于品牌、内容与创作，你可能想知道的</span>
+        </div>
+      </div>
+
+      <div class="faq-grid">
+        <details class="faq-item" open>
+          <summary>义姐是不良妈妈是一个什么样的品牌？<span class="plus">+</span></summary>
+          <div class="faq-ans">我们是一家专注家庭与亲子主题的原创视频品牌，以真实日常为素材，输出记录影像、人物访谈与实用方法类内容，倡导“不完美也值得被记录”的生活态度。</div>
+        </details>
+        <details class="faq-item">
+          <summary>品牌的内容可以在哪里看到？<span class="plus">+</span></summary>
+          <div class="faq-ans">本官网是品牌内容的集中展示入口，全部为官方发布的原创正版内容，页面中的焦点视频、专题与影像墙均可直接浏览。</div>
+        </details>
+        <details class="faq-item">
+          <summary>普通家庭可以参与内容创作吗？<span class="plus">+</span></summary>
+          <div class="faq-ans">当然可以。我们长期开放社区投稿，也定期举办亲子共创挑战赛。你只需准备好一段 3 分钟左右的家庭短片或创作脚本，通过投稿入口提交即可。</div>
+        </details>
+        <details class="faq-item">
+          <summary>投稿之后多久会收到回复？<span class="plus">+</span></summary>
+          <div class="faq-ans">编辑团队会在两周内完成初筛，并通过你留下的联系方式给出反馈。若作品进入精选，我们会进一步沟通授权与展示安排。</div>
+        </details>
+        <details class="faq-item">
+          <summary>品牌会提供拍摄指导吗？<span class="plus">+</span></summary>
+          <div class="faq-ans">会。我们整理了一份面向社区创作者的拍摄指南，涵盖设备、光线、分镜与后期建议，可在创作灵感模块获取。</div>
+        </details>
+        <details class="faq-item">
+          <summary>是否接受企业或机构的合作？<span class="plus">+</span></summary>
+          <div class="faq-ans">我们欢迎与家庭教育机构、公益组织、生活方式品牌展开合作，形式包括联合企划、内容共建与线下活动。请通过页面底部联系方式与我们取得联系。</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 联系 + 合作 ========== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="sec-head">
+        <div class="sec-title">
+          <b>联系我们</b>
+          <span>无论是投稿、合作还是建议，我们都愿意听</span>
+        </div>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-card">
+          <h3>品牌官方联络</h3>
+          <p>义姐是不良妈妈官方网站由品牌内容团队独立运营，欢迎创作者、媒体与机构与我们建立联系。我们珍惜每一次真诚的交流。</p>
+          <div class="contact-info">
+            <div class="ci-row"><span class="ci-ico">✉</span><span>合作邮箱：brand@yijie-family.cn</span></div>
+            <div class="ci-row"><span class="ci-ico">✎</span><span>投稿邮箱：create@yijie-family.cn</span></div>
+            <div class="ci-row"><span class="ci-ico">☎</span><span>品牌咨询：400-800-9206（工作日 10:00-18:00）</span></div>
+            <div class="ci-row"><span class="ci-ico">◎</span><span>内容中心：杭州市西湖区文三路 · 内容创作基地</span></div>
+          </div>
+          <div style="margin-top:22px;display:flex;gap:10px;flex-wrap:wrap;">
+            <button class="btn-primary" data-open="submit">✎ 在线投稿</button>
+            <button class="btn-ghost" data-open="report">⚑ 反馈建议</button>
+            <button class="btn-ghost" id="copyLink">⧉ 复制链接分享</button>
+          </div>
+        </div>
+
+        <div class="partner-wall">
+          <h3>合作与支持伙伴</h3>
+          <p>感谢这些机构与品牌，和我们在真实家庭记录的道路上并肩而行。</p>
+          <div class="partner-grid">
+            <div class="partner-logo"><b>芽芽绘本馆</b>亲子阅读</div>
+            <div class="partner-logo"><b>拾光影像</b>影像制作</div>
+            <div class="partner-logo"><b>邻里社区中心</b>线下活动</div>
+            <div class="partner-logo"><b>青禾心理</b>家庭咨询</div>
+            <div class="partner-logo"><b>慢山户外</b>亲子露营</div>
+            <div class="partner-logo"><b>禾田食研</b>家庭餐桌</div>
+          </div>
+          <p style="margin-top:20px;font-size:12.5px;color:var(--text-soft);">我们持续开放合作名额，期待与更多关注家庭成长的伙伴一起，把真实与温暖传递出去。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ========== 页脚 ========== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="fb-logo">
+          <div class="brand-logo" style="width:36px;height:36px;font-size:16px;">义</div>
+          <b>义姐是不良妈妈</b>
+        </div>
+        <p>专注家庭与亲子主题的原创视频品牌，以真实日常为素材，持续输出有温度、有品质的影像内容。官方网站 · 官方发布 · 持续运营中。</p>
+        <span class="fb-slogan">不完美，也值得被记录</span>
+      </div>
+
+      <div class="footer-col">
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#spotlight">焦点视频</a></li>
+          <li><a href="#feed">热门视频流</a></li>
+          <li><a href="#topics">专题企划</a></li>
+          <li><a href="#creators">创作者矩阵</a></li>
+          <li><a href="#gallery">影像墙</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>关于品牌</h4>
+        <ul>
+          <li><a href="#stories">品牌故事</a></li>
+          <li><a href="#updates">企业动态</a></li>
+          <li><a href="#contact">联系我们</a></li>
+          <li><a href="#contact">合作咨询</a></li>
+          <li><a href="#feed">创作灵感</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>参与社区</h4>
+        <p>欢迎投稿你的家庭短片，加入亲子共创挑战赛。我们相信，每一个普通家庭都值得被认真记录。</p>
+        <p style="margin-top:10px;">投稿邮箱：create@yijie-family.cn</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2019-2025 义姐是不良妈妈 官方网站 · 版权所有 · 内容均为原创正版</span>
+      <div class="links">
+        <a href="#top">返回首页</a>
+        <a href="#contact">用户协议</a>
+        <a href="#contact">隐私政策</a>
+        <span>备案号占位</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="backTop" aria-label="回到顶部">↑</button>
+<div id="toast"></div>
+
+<!-- 投稿弹窗 -->
+<div class="modal-mask" id="modal-submit">
+  <div class="modal-box">
+    <button class="modal-close" data-close>✕</button>
+    <h3>投稿 / 报名挑战赛</h3>
+    <p>填写你的作品信息，品牌编辑团队将在两周内与你联系。请确保内容真实、原创且拥有合法使用权。</p>
+    <label>你的昵称</label>
+    <input type="text" placeholder="例如：林间小满" id="subName">
+    <label>联系方式（邮箱或手机）</label>
+    <input type="text" placeholder="便于我们与你取得联系" id="subContact">
+    <label>作品简介 / 创作思路</label>
+    <textarea placeholder="简单介绍你的短片内容、拍摄初衷或想参与的挑战主题" id="subDesc"></textarea>
+    <button class="btn-primary" id="submitForm">提交作品</button>
+  </div>
+</div>
+
+<!-- 反馈弹窗 -->
+<div class="modal-mask" id="modal-report">
+  <div class="modal-box">
+    <button class="modal-close" data-close>✕</button>
+    <h3>反馈与建议</h3>
+    <p>你的每一条反馈都会被认真阅读。如果内容存在问题，请告诉我们具体情况，我们会尽快处理。</p>
+    <label>问题类型</label>
+    <input type="text" placeholder="内容异常 / 版权问题 / 体验建议" id="repType">
+    <label>详细说明</label>
+    <textarea placeholder="请描述你遇到的情况" id="repDesc"></textarea>
+    <button class="btn-primary" id="reportForm">提交反馈</button>
+  </div>
+</div>
+
+<!-- 作者信息弹窗 -->
+<div class="modal-mask" id="modal-author">
+  <div class="modal-box">
+    <button class="modal-close" data-close>✕</button>
+    <h3 id="authorName">创作者信息</h3>
+    <p id="authorDesc">这里是创作者的简介信息。</p>
+    <button class="btn-primary" id="authorFollow">关注创作者</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  /* ===== 移动端导航 ===== */
+  var menuToggle = document.getElementById('menuToggle');
+  var mainNav = document.getElementById('mainNav');
+  menuToggle.addEventListener('click', function(){
+    mainNav.classList.toggle('open');
+  });
+  mainNav.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      mainNav.classList.remove('open');
+      mainNav.querySelectorAll('a').forEach(function(x){x.classList.remove('active');});
+      a.classList.add('active');
+    });
+  });
+
+  /* ===== 搜索提示 ===== */
+  var searchInput = document.getElementById('searchInput');
+  var searchTip = document.getElementById('searchTip');
+  var topicsPool = [
+    '不完美妈妈计划 第08期',
+    '煎糊的蛋和一碗热粥',
+    '孩子说“你别管我”',
+    '衣柜越整越乱怎么办',
+    '义姐访谈室 · 三位妈妈坦白局',
+    '暑假计划手账法',
+    '亲子城市地图 · 旧书店路线',
+    '深夜书桌旁 · 第09期'
+  ];
+  searchInput.addEventListener('input', function(){
+    var kw = this.value.trim();
+    if(!kw){
+      searchTip.classList.remove('show');
+      searchTip.innerHTML = '';
+      return;
+    }
+    var hits = topicsPool.filter(function(t){ return t.indexOf(kw) > -1; });
+    if(hits.length){
+      searchTip.innerHTML = '<b style="color:var(--pink-deep)">找到 ' + hits.length + ' 条相关内容</b><br>' + hits.slice(0,3).map(function(h){return '· '+h;}).join('<br>');
+    }else{
+      searchTip.innerHTML = '暂无“' + kw + '”的直接结果，试试搜索“妈妈”“厨房”或“访谈”。';
+    }
+    searchTip.classList.add('show');
+  });
+  document.addEventListener('click', function(e){
+    if(!e.target.closest('.search-box')) searchTip.classList.remove('show');
+  });
+
+  /* ===== Toast ===== */
+  var toast = document.getElementById('toast');
+  var toastTimer = null;
+  function showToast(msg){
+    toast.textContent = msg;
+    toast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('show'); }, 2200);
+  }
+
+  /* ===== 点赞 / 收藏 ===== */
+  document.querySelectorAll('.like-btn').forEach(function(btn){
+    var span = btn.querySelector('span');
+    var base = parseInt(btn.getAttribute('data-base'),10) || 0;
+    var liked = false;
+    span.textContent = formatNum(base);
+    btn.addEventListener('click', function(){
+      liked = !liked;
+      btn.classList.toggle('liked', liked);
+      var n = liked ? base + 1 : base;
+      span.textContent = formatNum(n);
+      if(liked) showToast('已点赞，感谢你的喜欢');
+    });
+  });
+
+  document.querySelectorAll('.fav-btn').forEach(function(btn){
+    var span = btn.querySelector('span');
+    var saved = false;
+    btn.addEventListener('click', function(){
+      saved = !saved;
+      btn.classList.toggle('faved', saved);
+      span.textContent = saved ? '已收藏' : '收藏';
+      if(saved) showToast('已加入收藏夹');
+    });
+  });
+
+  function formatNum(n){
+    if(n >= 10000) return (n/10000).toFixed(1) + '万';
+    return String(n);
+  }
+
+  /* ===== 分享 / 复制链接 ===== */
+  document.querySelectorAll('.share-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(window.location.href).then(function(){
+          showToast('链接已复制，快分享给朋友吧');
+        }).catch(function(){
+          showToast('已生成分享链接，可手动复制');
+        });
+      }else{
+        showToast('已生成分享链接，可手动复制');
+      }
+    });
+  });
+
+  var copyLink = document.getElementById('copyLink');
+  if(copyLink){
+    copyLink.addEventListener('click', function(){
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(window.location.href).then(function(){
+          showToast('页面链接已复制');
+        }).catch(function(){
+          showToast('复制失败，请手动复制地址栏链接');
+        });
+      }else{
+        showToast('请手动复制地址栏链接进行分享');
+      }
+    });
+  }
+
+  /* ===== 标签筛选 ===== */
+  var filterBar = document.getElementById('filterBar');
+  var cards = document.querySelectorAll('#feedGrid .vcard');
+  if(filterBar){
+    filterBar.addEventListener('click', function(e){
+      var chip = e.target.closest('.chip');
+      if(!chip) return;
+      filterBar.querySelectorAll('.chip').forEach(function(c){c.classList.remove('on');});
+      chip.classList.add('on');
+      var filter = chip.getAttribute('data-filter');
+      cards.forEach(function(card){
+        var cat = card.getAttribute('data-cat');
+        if(filter === '全部' || cat === filter){
+          card.style.display = '';
+          card.style.animation = 'none';
+          void card.offsetWidth;
+          card.style.animation = 'pop .35s ease';
+        }else{
+          card.style.display = 'none';
+        }
+      });
+    });
+  }
+
+  /* ===== 关注按钮 ===== */
+  document.querySelectorAll('[data-follow]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var on = btn.classList.toggle('followed');
+      btn.textContent = on ? '已关注' : '+ 关注';
+      showToast(on ? '已关注该创作者' : '已取消关注');
+    });
+  });
+
+  /* ===== 回到顶部 ===== */
+  var backTop = document.getElementById('backTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 500) backTop.classList.add('show');
+    else backTop.classList.remove('show');
+  });
+  backTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* ===== 弹窗系统 ===== */
+  var modals = {
+    submit: document.getElementById('modal-submit'),
+    report: document.getElementById('modal-report')
+  };
+  function openModal(name){
+    if(modals[name]) modals[name].classList.add('show');
+  }
+  document.querySelectorAll('[data-open]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      openModal(btn.getAttribute('data-open'));
+    });
+  });
+  document.querySelectorAll('.modal-close,[data-close]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var mask = btn.closest('.modal-mask');
+      if(mask) mask.classList.remove('show');
+    });
+  });
+  document.querySelectorAll('.modal-mask').forEach(function(mask){
+    mask.addEventListener('click', function(e){
+      if(e.target === mask) mask.classList.remove('show');
+    });
+  });
+
+  var submitForm = document.getElementById('submitForm');
+  if(submitForm){
+    submitForm.addEventListener('click', function(){
+      var name = document.getElementById('subName').value.trim();
+      var contact = document.getElementById('subContact').value.trim();
+      if(!name || !contact){
+        showToast('请填写昵称与联系方式');
+        return;
+      }
+      document.getElementById('modal-submit').classList.remove('show');
+      showToast('投稿已提交，编辑团队会尽快联系你');
+      document.getElementById('subName').value = '';
+      document.getElementById('subContact').value = '';
+      document.getElementById('subDesc').value = '';
+    });
+  }
+
+  var reportForm = document.getElementById('reportForm');
+  if(reportForm){
+    reportForm.addEventListener('click', function(){
+      var desc = document.getElementById('repDesc').value.trim();
+      if(!desc){
+        showToast('请填写详细说明');
+        return;
+      }
+      document.getElementById('modal-report').classList.remove('show');
+      showToast('反馈已收到，感谢你的帮助我们改进');
+      document.getElementById('repType').value = '';
+      document.getElementById('repDesc').value = '';
+    });
+  }
+
+  /* ===== 作者信息弹窗（点击卡片作者） ===== */
+  var authorModal = document.getElementById('modal-author');
+  var authorName = document.getElementById('authorName');
+  var authorDesc = document.getElementById('authorDesc');
+  var authorFollow = document.getElementById('authorFollow');
+  var authorData = {
+    '义姐是不良妈妈': '品牌主理人，不完美主义育儿实践者。拍摄自己煎糊的蛋，也拍摄孩子偷偷塞进书包的道歉纸条。相信真实比精致更有力量。',
+    '义姐厨房日记': '专注家常菜的记录者。不做精致摆盘，只做孩子爱吃、大人省力的饭菜，用一锅一铲记录三餐四季。',
+    '义姐对话录': '把镜头对准普通人的访谈栏目，专注代际沟通与家庭关系，让每一句磕磕绊绊的真心话被听见。',
+    '义姐访谈室': '深度对话栏目，记录家庭关系中的坦白时刻。我们相信，说出来本身就是一种修复。',
+    '义姐家事研究所': '研究家庭收纳与空间秩序的内容栏目，主张“能维持三天的收纳，才是好收纳”。',
+    '义姐的慢镜头': '用慢镜头记录猫、阳台的光和慢慢长大的孩子。在快速的世界里，坚持拍慢的东西。',
+    '义姐通勤手记': '双职工家庭的通勤切片。地铁、路口、接送点，记录那些看似重复却悄悄变化的日子。',
+    '义姐成长记': '记录孩子成长中的关键小事：第一次骑车、第一次独自上学、第一次说出“我可以”。',
+    '义姐方法论': '把教育理论拆成能落地的家庭小工具，帮助父母在具体场景中做出更从容的选择。',
+    '义姐说说话': '专注亲子沟通的实践栏目，关注“怎么说孩子才愿意听”，也关注“怎么听孩子才愿意说”。',
+    '义姐的手工课': '记录雨天、假期与周末里的家庭手工时光，用简单的材料陪孩子度过一个下午。'
+  };
+  document.querySelectorAll('.vcard .author').forEach(function(authorEl){
+    authorEl.style.cursor = 'pointer';
+    authorEl.addEventListener('click', function(e){
+      e.stopPropagation();
+      var name = authorEl.querySelector('span:last-child').textContent.trim();
+      authorName.textContent = name;
+      authorDesc.textContent = authorData[name] || '这是一位在义姐是不良妈妈社区持续创作的记录者，用镜头记录真实的家庭日常。';
+      authorFollow.textContent = '关注创作者';
+      authorModal.classList.add('show');
+    });
+  });
+  if(authorFollow){
+    authorFollow.addEventListener('click', function(){
+      var t = authorFollow.textContent;
+      if(t === '关注创作者'){
+        authorFollow.textContent = '已关注';
+        showToast('已关注该创作者');
+      }else{
+        authorFollow.textContent = '关注创作者';
+        showToast('已取消关注');
+      }
+    });
+  }
+
+  /* ===== 数字滚动 ===== */
+  var counted = false;
+  function runCount(){
+    if(counted) return;
+    var stats = document.querySelectorAll('.hero-stats b[data-count]');
+    if(!stats.length) return;
+    var rect = stats[0].getBoundingClientRect();
+    if(rect.top < window.innerHeight){
+      counted = true;
+      stats.forEach(function(el){
+        var target = parseInt(el.getAttribute('data-count'),10);
+        var suffix = el.textContent.replace(/[0-9]/g,'');
+        var cur = 0;
+        var step = Math.max(1, Math.floor(target/40));
+        var timer = setInterval(function(){
+          cur += step;
+          if(cur >= target){
+            cur = target;
+            clearInterval(timer);
+          }
+          el.textContent = cur + '万'.replace('万','') + suffix.replace(/[0-9]/g,'');
+        }, 30);
+      });
+    }
+  }
+  window.addEventListener('scroll', runCount);
+  runCount();
+
+  /* ===== 卡片悬停已由 CSS 处理 ===== */
+})();
+</script>
+</body>
+              </html>
